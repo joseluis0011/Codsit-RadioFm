@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-US">
+
+<!-- Mirrored from silicon.8guild.com/enterprise-software-development/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Apr 2018 00:24:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Enterprise Software Development &#8211; Silicon</title>
+	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+	<link rel='dns-prefetch' href='http://s.w.org/' />
+	<link rel="alternate" type="application/rss+xml" title="Silicon &raquo; Feed" href="../feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="Silicon &raquo; Comments Feed" href="../comments/feed/index.html" />
+	<script type="text/javascript">
+		window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/silicon.8guild.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+		!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+	</script>
+	<style type="text/css">body { overflow-y: hidden; }.page-wrapper {-webkit-transition: opacity .7s .9s;transition: opacity .7s .9s;opacity: 0;}.page-wrapper.loading-done { opacity: 1; }.loading-screen {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: #ffffff;z-index: 9999;opacity: 1;visibility: visible;-webkit-transition: all .1s;transition: all 1s;}.loading-screen.loading-done {opacity: 0;visibility: hidden;}.loading-screen .inner {position: absolute;width: 100%;top: 50%;left: 0;padding: 20px;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}.loading-screen .preloader-logo {display: block;margin: 0 auto 30px auto;}.progress-wrap {display: block; position: relative;height: 2px;width: 220px;border-radius: 2px;background-color: #f0f0f0;overflow: hidden;margin: auto;}.progress-wrap .indeterminate {background-color: #3d59f9;}.progress-wrap .indeterminate::before,.progress-wrap .indeterminate::after {content: '';position: absolute;background-color: inherit;top: 0;left: 0;bottom: 0;will-change: left, right;}.progress-wrap .indeterminate::before { -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;}.progress-wrap .indeterminate::after { -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;-webkit-animation-delay: 1.15s;animation-delay: 1.15s;}@-webkit-keyframes indeterminate {0% {left: -35%;right: 100%;}60% {left: 100%;right: -90%;}100% {left: 100%;right: -90%;}}@keyframes indeterminate {0% {left: -35%;right: 100%;}60% {left: 100%;right: -90%;}100% {left: 100%;right: -90%;}}@-webkit-keyframes indeterminate-short {0% {left: -200%;right: 100%;}60% {left: 107%;right: -8%;}100% {left: 107%;right: -8%;}}@keyframes indeterminate-short {0% {left: -200%;right: 100%;}60% {left: 107%;right: -8%;}100% {left: 107%;right: -8%;}}</style><style type="text/css">
+	img.wp-smiley,
+	img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 .07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+	<link rel='stylesheet' id='bbp-default-css'  href='../wp-content/themes/silicon/css/bbpress.css' type='text/css' media='screen' />
+	<link rel='stylesheet' id='bp-parent-css-css'  href='../wp-content/themes/silicon/css/buddypress.css' type='text/css' media='screen' />
+	<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='aos-css'  href='../wp-content/plugins/silicon-core/assets/css/vendor/aos.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='woocommerce-layout-css'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+	<link rel='stylesheet' id='woocommerce-general-css'  href='../wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='silicon-body-font-css'  href='http://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700' type='text/css' media='screen' />
+	<link rel='stylesheet' id='silicon-headings-font-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900' type='text/css' media='screen' />
+	<link rel='stylesheet' id='silicon-navigation-font-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%2C900' type='text/css' media='screen' />
+	<link rel='stylesheet' id='silicon-icons-css'  href='../wp-content/themes/silicon/assets/stylesheets/vendor/silicon-icons.min.css' type='text/css' media='screen' />
+	<link rel='stylesheet' id='socicon-css'  href='../wp-content/themes/silicon/assets/stylesheets/vendor/socicon.min.css' type='text/css' media='screen' />
+	<link rel='stylesheet' id='bootstrap-css'  href='../wp-content/themes/silicon/assets/stylesheets/vendor/bootstrap.min.css' type='text/css' media='screen' />
+	<link rel='stylesheet' id='silicon-css'  href='../wp-content/themes/silicon/assets/stylesheets/theme.min.css' type='text/css' media='screen' />
+	<style id='silicon-inline-css' type='text/css'>
+		.text-primary{color:#3d59f9 !important}.background-primary{background-color:#3d59f9}.bg-primary{background-color:rgba(61, 89, 249, .25)}.border-color-primary{border-color:#3d59f9}.widget_tag_cloud a:hover,.widget_product_tag_cloud a:hover,.bbp-page-title-tags a:hover,.tags-links a:hover{background-color:#3d59f9}#bbp-user-navigation .current a{color:#3d59f9 !important}.pagination .nav-links .page-numbers.current{background-color:#3d59f9}.site-footer.footer-light .widget_tag_cloud a:hover,.site-footer.footer-light .widget_product_tag_cloud a:hover,.site-footer.footer-light .tags-links a:hover{background-color:#3d59f9}.cart-toggle .product-count{border-color:#3d59f9;color:#3d59f9}.intro-section.intro-comparison .cd-handle{background-color:#3d59f9}.woocommerce-MyAccount-navigation ul li.is-active a{color:#3d59f9 !important}.woocommerce div.product div.images .flex-control-thumbs li:after{background-color:#3d59f9}.woocommerce .widget_price_filter .ui-slider .ui-slider-range{background-color:#3d59f9}.btn-solid.btn-primary{background-color:#3d59f9}.btn-solid.btn-primary:hover{background-color:#1537f8;box-shadow:0 14px 25px -8px rgba(61, 89, 249, .55)}.btn-ghost.btn-primary{border-color:#3d59f9;color:#3d59f9}.btn-ghost.btn-primary::before{background-color:#3d59f9}.btn-ghost.btn-primary:hover{color:#fff;box-shadow:0 14px 25px -8px rgba(61, 89, 249, .55)}.btn-link.btn-primary{color:#3d59f9}.btn-link.btn-primary:hover{background-color:#fff;color:#3d59f9;box-shadow:0 14px 25px -8px rgba(61, 89, 249, .45)}.counter.counter-iconed:hover .counter-icon-box{border-color:#3d59f9;box-shadow:0 12px 30px -2px rgba(61, 89, 249, .3)}.hotspots-container .hotspot{background-color:rgba(61, 89, 249, .5)}.hotspots-container .hotspot::before{background-color:rgba(61, 89, 249, .5)}.hotspots-container .hotspot::after{background-color:#3d59f9}.sb-mail{color:#3d59f9}.social-button.sb-monochrome.sb-mail .hvrd{color:#3d59f9}.nav-tabs.active > a,.wc-tabs.active > a,.nav-filters > ul > li.active > a,.nav-tabs.active > a:hover,.wc-tabs.active > a:hover,.nav-filters > ul > li.active > a:hover,.nav-tabs.active > a:focus,.wc-tabs.active > a:focus,.nav-filters > ul > li.active > a:focus{background-color:#3d59f9}.text-info{color:#5695fe !important}.background-info{background-color:#5695fe}.bg-info{background-color:rgba(86, 149, 254, .25)}.border-color-info{border-color:#5695fe}.woocommerce-info::before{color:#5695fe}.btn-solid.btn-info{background-color:#5695fe}.btn-solid.btn-info:hover{background-color:#2d7cfe;box-shadow:0 14px 25px -8px rgba(86, 149, 254, .6)}.btn-ghost.btn-info{border-color:#5695fe;color:#5695fe}.btn-ghost.btn-info::before{background-color:#5695fe}.btn-ghost.btn-info:hover{color:#fff;box-shadow:0 14px 25px -8px rgba(86, 149, 254, .6)}.btn-link.btn-info{color:#5695fe}.btn-link.btn-info:hover{background-color:#fff;color:#5695fe;box-shadow:0 14px 25px -8px rgba(86, 149, 254, .45)}.text-success{color:#00e676 !important}.background-success{background-color:#00e676}.bg-success{background-color:rgba(0, 230, 118, .25)}.border-color-success{border-color:#00e676}.woocommerce-message::before{color:#00e676}.wpcf7-response-output.wpcf7-mail-sent-ok{border-color:#00e676 !important;background-color:rgba(0, 230, 118, .15);color:#00cd69}.btn-solid.btn-success{background-color:#00e676}.btn-solid.btn-success:hover{background-color:#00bd61;box-shadow:0 14px 25px -8px rgba(0, 230, 118, .6)}.btn-ghost.btn-success{border-color:#00e676;color:#00e676}.btn-ghost.btn-success::before{background-color:#00e676}.btn-ghost.btn-success:hover{color:#fff;box-shadow:0 14px 25px -8px rgba(0, 230, 118, .6)}.btn-link.btn-success{color:#00e676}.btn-link.btn-success:hover{background-color:#fff;color:#00e676;box-shadow:0 14px 25px -8px rgba(0, 230, 118, .45)}.text-warning{color:#ff5f2c !important}.background-warning{background-color:#ff5f2c}.bg-warning{background-color:rgba(255, 95, 44, .25)}.border-color-warning{border-color:#ff5f2c}.woocommerce-error::before{color:#ff5f2c}.comment-form-rating .star-rating::before{color:#ff5f2c}.wpcf7-response-output.wpcf7-mail-sent-ng{border-color:#ff5f2c !important;background-color:rgba(255, 95, 44, .15);color:#ff5f2c}.btn-solid.btn-warning{background-color:#ff5f2c}.btn-solid.btn-warning:hover{background-color:#ff4003;box-shadow:0 14px 25px -8px rgba(255, 95, 44, .6)}.btn-ghost.btn-warning{border-color:#ff5f2c;color:#ff5f2c}.btn-ghost.btn-warning::before{background-color:#ff5f2c}.btn-ghost.btn-warning:hover{color:#fff;box-shadow:0 14px 25px -8px rgba(255, 95, 44, .6)}.btn-link.btn-warning{color:#ff5f2c}.btn-link.btn-warning:hover{background-color:#fff;color:#ff5f2c;box-shadow:0 14px 25px -8px rgba(255, 95, 44, .45)}.text-danger{color:#ff5252 !important}.background-danger{background-color:#ff5252}.bg-danger{background-color:rgba(255, 82, 82, .25)}.border-color-danger{border-color:#ff5252}.woocommerce span.onsale{background-color:#ff5252}.widget_shopping_cart .product-item .remove-from-cart:hover{background-color:#ff5252}.wpcf7-not-valid-tip,.nf-error-required-error{color:#ff5252 !important}.nf-error-required-error{padding-top:5px}.wpcf7-not-valid,.nf-error textarea,.nf-error input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file']){border-color:#ff5252 !important}.wpcf7-response-output.wpcf7-validation-errors{border-color:#ff5252 !important;background-color:rgba(255, 82, 82, .15);color:#ff5252}.offcanvas-container.offcanvas-cart .product-item .remove-from-cart:hover{color:#ff5252}.btn-solid.btn-danger{background-color:#ff5252}.btn-solid.btn-danger:hover{background-color:#ff2929;box-shadow:0 14px 25px -8px rgba(255, 82, 82, .6)}.btn-ghost.btn-danger{border-color:#ff5252;color:#ff5252}.btn-ghost.btn-danger::before{background-color:#ff5252}.btn-ghost.btn-danger:hover{color:#fff;box-shadow:0 14px 25px -8px rgba(255, 82, 82, .6)}.btn-link.btn-danger{color:#ff5252}.btn-link.btn-danger:hover{background-color:#fff;color:#ff5252;box-shadow:0 14px 25px -8px rgba(255, 82, 82, .45)}.bg-gradient{background:#3d59f9;background:linear-gradient(to right, #8e54e9 0%, #8e54e9 20%, #3d59f9 100%);color:#fff !important}.background-gradient{background:#3d59f9;background:linear-gradient(to right, #8e54e9 0%, #8e54e9 20%, #3d59f9 100%)}.btn-solid.btn-gradient{background:#3d59f9;background:linear-gradient(to right, #8e54e9 0%, #8e54e9 20%, #3d59f9 100%);color:#fff}.btn-solid.btn-gradient:hover{background:#3d59f9;background:linear-gradient(to right, #8e54e9 0%, #8e54e9 20%, #3d59f9 100%);color:#fff;box-shadow:0 14px 25px -8px rgba(61, 89, 249, .55)}.btn-link.btn-gradient:hover{box-shadow:0 14px 25px -8px rgba(61, 89, 249, .55)}.btn-link.btn-gradient::before{background:linear-gradient(to right, #8e54e9, #3d59f9)}body,.intro-section + *{background-color:#fff}.pagination{background-color:#fff}body,.comments-area .logged-in-as > a,.topbar .additional-info a,.topbar .topbar-menu ul > li > a,.topbar .login-link,.caret,.portfolio-post-tile .portfolio-post-info .portfolio-tile-title a,.woocommerce div.product p.price,.woocommerce div.product span.price,.si-logos-item .si-logos-info{color:#404040}.topbar.topbar-light-skin{color:#fff}.topbar.topbar-light-skin .additional-info > *,.topbar.topbar-light-skin .topbar-menu ul > li > a,.topbar.topbar-light-skin .login-link,.topbar.topbar-light-skin .lang-switcher .caret{color:#fff}.comments-area .logged-in-as > a{color:#404040}.comments-area .logged-in-as > a:hover{color:#222}.tabs-light .nav-tabs li a,.filters-light .nav-tabs li a,.tabs-light.nav-filters li a,.filters-light.nav-filters li a{color:#fff}.tabs-light .nav-tabs li a:hover,.filters-light .nav-tabs li a:hover,.tabs-light.nav-filters li a:hover,.filters-light.nav-filters li a:hover{color:#404040}.tabs-light .nav-tabs li.active a,.filters-light .nav-tabs li.active a,.tabs-light.nav-filters li.active a,.filters-light.nav-filters li.active a{color:#fff}h1,.h1{color:#222}h3,.h3{color:#222}h4,.h4{color:#222}h5,.h5{color:#222}h6,.h6{color:#222}a{color:#3d59f9}a:hover{color:#3d59f9}blockquote{color:#404040}blockquote::before{color:#e7e7e7}blockquote cite{color:#999}.navi-link-color{color:#222 !important}.pagination .nav-links .page-numbers{color:#222}.pagination .nav-links .page-numbers.current{color:#fff}.widget div > ul a,.widget > ul > li a{color:#222}.widget div > ul a:hover,.widget > ul > li a:hover{color:#3d59f9}.widget div > ul.current-menu-item > a,.widget > ul > li.current-menu-item > a,.widget div > ul.current-menu-ancestor > a,.widget > ul > li.current-menu-ancestor > a{color:#3d59f9}.widget_tag_cloud a,.widget_product_tag_cloud a,.bbp-page-title-tags a,.tags-links a{color:#222}.widget_tag_cloud a:hover,.widget_product_tag_cloud a:hover,.bbp-page-title-tags a:hover,.tags-links a:hover{color:#fff}.widget_calendar a{color:#222}.widget_calendar a:hover{color:#3d59f9}.widget_rss .widget-title > a{color:#222}.widget_rss .widget-title > a:hover{color:#3d59f9}.site-header .sub-menu > li > a{color:#222}.site-header .sub-menu > li > a:hover{color:#3d59f9}.site-header .sub-menu > li.current-menu-item > a,.site-header .sub-menu > li.current-menu-ancestor > a{color:#3d59f9}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a{color:#222}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a:hover{color:#3d59f9}.navbar-horizontal .menu-wrap .main-navigation > ul > li.current-menu-item > a,.navbar-horizontal .menu-wrap .main-navigation > ul > li.current-menu-ancestor > a{color:#3d59f9}.site-search-toggle,.cart-toggle,.offcanvas-menu-toggle{color:#222}.site-search-toggle:hover,.cart-toggle:hover,.offcanvas-menu-toggle:hover{color:#3d59f9}.site-search-toggle.active,.cart-toggle.active,.offcanvas-menu-toggle.active{color:#3d59f9}.menu-skin-light .site-search-toggle,.menu-skin-light .cart-toggle,.menu-skin-light .offcanvas-menu-toggle{color:#fff}.menu-skin-light .site-search-toggle:hover,.menu-skin-light .cart-toggle:hover,.menu-skin-light .offcanvas-menu-toggle:hover,.menu-skin-light .site-search-toggle.active,.menu-skin-light .cart-toggle.active,.menu-skin-light .offcanvas-menu-toggle.active{color:rgba(255, 255, 255, .6)}.menu-skin-light .mobile-menu-toggle{color:#fff}.menu-skin-light .cart-toggle .product-count{color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li > a{color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li > a::before{background-color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li > a:hover{color:rgba(255, 255, 255, .6) !important}.menu-skin-light .menu-wrap .main-navigation > ul > li.current-menu-item > a,.menu-skin-light .menu-wrap .main-navigation > ul > li.current-menu-ancestor > a{color:#fff !important}.header-lateral .main-navigation > ul > li > a{color:#222}.header-lateral .main-navigation > ul > li > a:hover{color:#3d59f9}.header-lateral .main-navigation > ul > li.current-menu-item > a,.header-lateral .main-navigation > ul > li.current-menu-ancestor > a{color:#3d59f9}.panel-title > a{color:#222}.panel-group-light .panel-title > a{color:#fff}.navi-link-hover-color:hover{color:#3d59f9 !important}.widget div > ul a :hover,.widget > ul > li a :hover{color:#3d59f9}.widget div > ul.current-menu-item > a,.widget > ul > li.current-menu-item > a,.widget div > ul.current-menu-ancestor > a,.widget > ul > li.current-menu-ancestor > a{color:#3d59f9}.widget_calendar a:hover,.widget_rss .widget-title > a:hover{color:#3d59f9}.site-header .sub-menu > li > a:hover{color:#3d59f9}.site-header .sub-menu > li.current-menu-item > a,.site-header .sub-menu > li.current-menu-ancestor > a{color:#3d59f9}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a:hover{color:#3d59f9}.navbar-horizontal .menu-wrap .main-navigation > ul > li.current-menu-item > a,.navbar-horizontal .menu-wrap .main-navigation > ul > li.current-menu-ancestor > a{color:#3d59f9}.site-search-toggle:hover,.cart-toggle:hover,.offcanvas-menu-toggle:hover{color:#3d59f9}.site-search-toggle.active,.cart-toggle.active,.offcanvas-menu-toggle.active{color:#3d59f9}.menu-skin-light .site-search-toggle:hover,.menu-skin-light .cart-toggle:hover,.menu-skin-light .offcanvas-menu-toggle:hover,.menu-skin-light .site-search-toggle.active,.menu-skin-light .cart-toggle.active,.menu-skin-light .offcanvas-menu-toggle.active{color:rgba(255, 255, 255, .6)}.menu-skin-light .cart-toggle .product-count{color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li > a::before{background-color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li > a:hover{color:rgba(255, 255, 255, .6) !important}.menu-skin-light .menu-wrap .main-navigation > ul > li.current-menu-item > a,.menu-skin-light .menu-wrap .main-navigation > ul > li.current-menu-ancestor > a{color:#fff !important}.header-lateral .main-navigation > ul > li > a:hover{color:#3d59f9}.header-lateral .main-navigation > ul > li.current-menu-item > a,.header-lateral .main-navigation > ul > li.current-menu-ancestor > a{color:#3d59f9}.breadcrumbs a:hover{color:#3d59f9}.post-tile:not(.has-post-thumbnail) .post-header .post-categories > a:hover,.post-horizontal:not(.has-post-thumbnail) .post-header .post-categories > a:hover{color:#3d59f9 !important}.widget div > ul.current-menu-item > a,.widget > ul > li.current-menu-item > a,.widget div > ul.current-menu-ancestor > a,.widget > ul > li.current-menu-ancestor > a{color:#3d59f9}.site-header .sub-menu > li.current-menu-item > a,.site-header .sub-menu > li.current-menu-ancestor > a{color:#3d59f9}.navbar-horizontal .menu-wrap .main-navigation > ul > li.current-menu-item > a,.navbar-horizontal .menu-wrap .main-navigation > ul > li.current-menu-ancestor > a{color:#3d59f9}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a:before{background-color:#3d59f9}.site-search-toggle.active,.cart-toggle.active,.offcanvas-menu-toggle.active{color:#3d59f9}.menu-skin-light .site-search-toggle.active,.menu-skin-light .cart-toggle.active,.menu-skin-light .offcanvas-menu-toggle.active{color:rgba(255, 255, 255, .6)}.menu-skin-light .cart-toggle .product-count{color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li > a::before{background-color:#fff !important}.menu-skin-light .menu-wrap .main-navigation > ul > li.current-menu-item > a,.menu-skin-light .menu-wrap .main-navigation > ul > li.current-menu-ancestor > a{color:#fff !important}.header-lateral .main-navigation > ul > li.current-menu-item > a,.header-lateral .main-navigation > ul > li.current-menu-ancestor > a{color:#3d59f9}label,.nf-field-label > label{color:#999}textarea,select,input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file']){color:#404040}textarea::-moz-placeholder,select::-moz-placeholder,input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file'])::-moz-placeholder{color:#999;opacity:1}textarea:-ms-input-placeholder,select:-ms-input-placeholder,input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file']):-ms-input-placeholder{color:#999}textarea::-webkit-input-placeholder,select::-webkit-input-placeholder,input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file'])::-webkit-input-placeholder{color:#999}.search-box button[type='submit'],.input-group i{color:#999}.widget-title,.widgettitle{color:#999}body,.font-family-body{font-family:"Roboto Slab", serif}.font-family-headings,.tooltip,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,blockquote cite,.intro-section.intro-comparison .cs-label,.si-cta .digit{font-family:"Roboto", sans-serif}.font-family-nav,textarea,select,input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']),label,.nf-field-label > label,.wpcf7-not-valid-tip,.nf-error-required-error,.nf-field-description,.wpcf7-list-item-label,.checkbox-radio-label,.wpcf7-response-output,.widget_calendar,.breadcrumbs,.btn,input[type='submit'],input[type='button'],.nav-filters > ul > li > a,.nav-tabs > li > a,.wc-tabs > li > a,.market-btn{font-family:"Roboto", sans-serif}.widget ul,.widget dd,.widget dt{font-family:"Roboto", sans-serif}.widget_tag_cloud a,.widget_product_tag_cloud a,.bbp-page-title-tags a,.tags-links a{font-family:"Roboto", sans-serif}body,textarea,select,input[type]:not([type='submit']):not([type='button']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file']),.wpcf7-list-item-label,.checkbox-radio-label,.widget_recent_comments ul > li > a,.offcanvas-container.offcanvas-cart .cart-header .cart-title,.woocommerce-cart .cart-collaterals .carttotals table td p,.widget_shopping_cart .product-item .product-title,.widget_shopping_cart .product-item .product-price,.widget_shopping_cart .cart-subtotal .column:first-child,.widget .owl-carousel .product-item .product-title,.widget .owl-carousel .product-item .product-title a,.panel-title > a,.progress .progress-bar-label,.testimonial .testimonial-author-name{font-size:14}.wpcf7-not-valid-tip,.nf-error-required-error{font-size:14 !important}.widget_silicon_recent_posts .post-item .post-title,.widget_silicon_recent_posts_carousel .post-item .post-title,.popover .post-item .post-title{font-size:14}.lead{font-size:24}.text-xl{font-size:18}.text-sm{font-size:12}.text-xs{font-size:10}h1,.h1{font-size:36}@media (max-width:768px){h1,.h1{font-size:34}}.page-title h1{font-size:50}@media (max-width:991px){.page-title h1{font-size:43}}@media (max-width:768px){.page-title h1{font-size:36}}h1,.h1{font-weight:900}h1,.h1{text-transform:none}h1,.h1{font-style:normal}h2,.h2{font-size:30}@media (max-width:768px){h2,.h2{font-size:28}}h2,.h2{font-weight:900}h2,.h2{text-transform:none}h2,.h2{font-style:normal}h3,.h3{font-size:24}@media (max-width:768px){h3,.h3{font-size:22}}.woocommerce div.product p.price,.woocommerce div.product span.price,.woocommerce-cart .cart-collaterals .carttotals table td{font-size:24}.woocommerce-cart table.cart .product-name a,.woocommerce-cart table.cart .product-price .amount,.woocommerce-cart table.cart .product-subtotal .amount{font-size:24}.step.step-hover .step-digit,.step.step-image .step-digit{font-size:24}h3,.h3{font-weight:900}h3,.h3{text-transform:none}h3,.h3{font-style:normal}h4,.h4,.portfolio-post .portfolio-tile-title a,.product-tile .product-tile-body .product-title a,.woocommerce-cart .cart-collaterals .carttotals table th{font-size:20}h4,.h4{font-weight:900}h4,.h4{text-transform:none}h4,.h4{font-style:normal}h5,.h5,.intro-section.intro-personal .person-name{font-size:18}h5,.h5{font-weight:900}h5,.h5{text-transform:none}h5,.h5{font-style:normal}h6,.h6,.comment .author-name{font-size:16}h6,.h6{font-weight:900}h6,.h6{text-transform:none}h6,.h6{font-style:normal}body,.widget_recent_comments ul,.intro-section.intro-personal .person-name,.woocommerce-cart .cart-collaterals .carttotals table td p,.hotspots-container .hotspot .hotspot-tooltip{line-height:1.5}h1,.h1,.text-huge,.intro-section.intro-featured-posts .post-title{line-height:1.15}h2,.h2{line-height:1.2}h3,.h3{line-height:1.25}h4,.h4{line-height:1.3}h5,.h5{line-height:1.35}h6,.h6{line-height:1.4}blockquote{font-size:18}blockquote::before{font-size:36}blockquote cite{font-size:14}blockquote{font-weight:300}blockquote cite{font-weight:normal}blockquote{text-transform:none}blockquote cite{text-transform:none}blockquote{font-style:normal}blockquote cite{font-style:normal}blockquote::before{font-size:36}blockquote cite{font-size:14}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a,.btn,input[type='submit'],input[type='button'],.nav-filters > ul > li > a,.nav-tabs > li > a,.wc-tabs > li > a{font-size:12}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a,.btn,input[type='submit'],input[type='button'],.nav-filters > ul > li > a,.nav-tabs > li > a,.wc-tabs > li > a{font-weight:bold}.navbar-horizontal .menu-wrap .main-navigation > ul > li > a,.btn,input[type='submit'],input[type='button'],.nav-filters > ul > li > a,.nav-tabs > li > a,.wc-tabs > li > a{text-transform:uppercase}" .navbar-horizontal .menu-wrap .main-navigation > ul > li > a,.btn,input[type='submit'],input[type='button'],.nav-filters > ul > li > a,.nav-tabs > li > a,.wc-tabs > li > a{font-style:none}" .widget-title,.widgettitle{font-size:14}.widget-title,.widgettitle{font-weight:500}.widget-title,.widgettitle{text-transform:uppercase}.widget-title,.widgettitle{font-style:none}
+	</style>
+	<link rel='stylesheet' id='silicon-child-css'  href='../wp-content/themes/silicon-child/style.css' type='text/css' media='all' />
+	<script type="text/javascript">
+		( function () {
+			window.onload = function () {
+				var body = document.querySelector( "body" );
+				var preloader = body.querySelector( ".loading-screen" );
+				var page = body.querySelector( ".page-wrapper" );
+				body.style.overflowY = "auto";
+				preloader.classList.add( "loading-done" );
+				page.classList.add( "loading-done" );
+			};
+		} )();
+	</script>
+	<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js'></script>
+	<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var BP_Confirm = {"are_you_sure":"Are you sure?"};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='../wp-content/plugins/buddypress/bp-core/js/confirm.min.js'></script>
+	<script type='text/javascript' src='../wp-content/plugins/buddypress/bp-core/js/widget-members.min.js'></script>
+	<script type='text/javascript' src='../wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js'></script>
+	<script type='text/javascript' src='../wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js'></script>
+	<script type='text/javascript' src='../wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js'></script>
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var BP_DTheme = {"accepted":"Accepted","close":"Close","comments":"comments","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Favorite","my_favs":"My Favorites","rejected":"Rejected","remove_fav":"Remove Favorite","show_all":"Show all","show_all_comments":"Show all comments for this thread","show_x_comments":"Show all comments (%d)","unsaved_changes":"Your profile has unsaved changes. If you leave the page, the changes will be lost.","view":"View"};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='../wp-content/themes/silicon/js/buddypress.js'></script>
+	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/silicon.8guild.com\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/silicon.8guild.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js'></script>
+	<script type='text/javascript' src='../wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js'></script>
+	<link rel='https://api.w.org/' href='../wp-json/index.html' />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
+	<meta name="generator" content="WordPress 4.8.3" />
+	<meta name="generator" content="WooCommerce 3.2.3" />
+	<link rel="canonical" href="index.html" />
+	<link rel='shortlink' href='../index8b39.html?p=1157' />
+	<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedb6f8.json?url=http%3A%2F%2Fsilicon.8guild.com%2Fenterprise-software-development%2F" />
+	<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed0ffe?url=http%3A%2F%2Fsilicon.8guild.com%2Fenterprise-software-development%2F&amp;format=xml" />
+
+	<script type="text/javascript">var ajaxurl = '../wp-admin/admin-ajax.html';</script>
+
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+	<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://silicon.8guild.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><link rel="icon" href="../wp-content/uploads/2017/06/cropped-favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="../wp-content/uploads/2017/06/cropped-favicon-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="../wp-content/uploads/2017/06/cropped-favicon-180x180.png" />
+	<meta name="msapplication-TileImage" content="http://silicon.8guild.com/wp-content/uploads/2017/06/cropped-favicon-270x270.png" />
+	<style type="text/css" data-type="vc_custom-css">.custom-title h2 {
+		font-size: 48px;
+	}
+
+	.custom-bg-position {
+		background-position: -30px 240px;
+	}
+
+	.custom-bordered-row {
+		border-radius: 5px;
+		-webkit-box-shadow: 0px 16px 79px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 16px 79px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 16px 79px 0px rgba(0,0,0,0.2);
+	}
+
+	@media screen and (max-width: 768px) {
+		.custom-btn-position.mobile-center .text-right {
+			text-align: center!important;
+		}
+	}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1509452225037{background-image: url(../wp-content/uploads/2017/10/enterprise_bg_016b6d.jpg?id=1213) !important;}.vc_custom_1509452429451{background: #f2f2f2 url(http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_bg.jpg?id=1222) !important;}.vc_custom_1502453349343{background-color: #3d59f9 !important;}.vc_custom_1502456436908{background-color: #ffffff !important;}.vc_custom_1502451622559{padding-right: 60px !important;padding-left: 60px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="bp-legacy page-template-default page page-id-1157 group-blog body-horizontal with-title wpb-js-composer js-comp-ver-5.4.2 vc_responsive no-js">
+
+<!-- Google Tag Manager -->
+<noscript>
+	<iframe src="http://www.googletagmanager.com/ns.html?id=GTM-K57FHH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-K57FHH');
+</script>
+<!-- End Google Tag Manager -->
+
+<div class="loading-screen">
+	<div class="inner">
+		<div class="preloader-logo" style="width: 150px;"><img width="300" height="102" src="../wp-content/uploads/2017/05/logo_preloader.png" class="attachment-full size-full" alt="" /></div>
+		<div class="progress-wrap"><div class="indeterminate"></div></div>
+	</div>
+</div>
+<div class="offcanvas-container offcanvas-cart">
+	<header class="cart-header">
+		<div class="column">
+			<h3 class="cart-title">Cart</h3>
+		</div>
+		<div class="column">
+			<a href="../cart/index.html" class="view-cart-link font-family-nav navi-link-hover-color">
+				View Cart                        <i class="si si-angle-right"></i>
+			</a>
+		</div>
+	</header>
+
+	<div class="si-wc-ajax-cart">
+
+
+		<div class="padding-top-1x padding-bottom-1x text-center">
+			<p class="text-white opacity-50">Your Cart is currently empty.</p>
+			<a href="../shop/index.html"
+			   class="btn btn-pill btn-ghost btn-white"
+			>Fill Cart with Goods</a>
+		</div>
+
+
+	</div>
+
+</div>
+<div class="offcanvas-container mobile-menu">
+	<form method="get" class="search-box" action="http://silicon.8guild.com/" autocomplete="off">
+		<input type="text" name="s"
+			   placeholder="Search"
+			   value="">
+		<button type="submit"><i class="si si-search"></i></button>
+	</form>
+	<nav class="main-navigation font-family-nav"><ul id="menu-primary-menu" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-31 has-mega-menu"><a href="../index.html">Home</a><span class="sub-menu-toggle"></span>
+		<ul class="sub-menu">
+			<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32"><a href="#">Presentation, Showcase &#038; Personal</a><span class="sub-menu-toggle"></span>
+				<ul class="sub-menu">
+					<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-36"><a href="../index.html">Theme Presentation Landing</a></li>
+					<li id="menu-item-1229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1229"><a href="../mobile-app-showcase/index.html">Mobile App Showcase</a></li>
+					<li id="menu-item-1230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1230"><a href="../web-app-presentation/index.html">Web App Presentation</a></li>
+					<li id="menu-item-1231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1231"><a href="../product-landing-page/index.html">Product Landing Page</a></li>
+					<li id="menu-item-1232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a href="../freelancer-cvportfolio/index.html">Freelancer CV/Portfolio</a></li>
+				</ul>
+			</li>
+			<li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-33"><a href="#">Business &#038; E-Commerce</a><span class="sub-menu-toggle"></span>
+				<ul class="sub-menu">
+					<li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a href="../digital-agency/index.html">Digital Agency</a></li>
+					<li id="menu-item-1234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="../online-shop-woocommerce/index.html">Online Shop (WooCommerce)</a></li>
+					<li id="menu-item-1235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="../venture-capital-investments/index.html">Venture Capital Investments</a></li>
+					<li id="menu-item-1236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1236"><a href="../startup-crowdfunding/index.html">Startup Crowdfunding</a></li>
+					<li id="menu-item-1237" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1157 current_page_item menu-item-1237"><a href="index.html">Enterprise Software Development</a></li>
+				</ul>
+			</li>
+			<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34"><a href="#">Writing &#038; Learning</a><span class="sub-menu-toggle"></span>
+				<ul class="sub-menu">
+					<li id="menu-item-1238" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="../corporate-blog-frontpage/index.html">Corporate Blog Frontpage</a></li>
+					<li id="menu-item-1239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239"><a href="../personal-blog-frontpage/index.html">Personal Blog Frontpage</a></li>
+					<li id="menu-item-905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-905"><a href="../forums/topic/bbpress-forum-favorite-topic/index.html">Helpdesk / Forum (bbPress)</a></li>
+					<li id="menu-item-1077" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1077"><a href="../docs/index.html">Online Documentation</a></li>
+				</ul>
+			</li>
+			<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35"><a href="#">Meeting &#038; Collaboration</a><span class="sub-menu-toggle"></span>
+				<ul class="sub-menu">
+					<li id="menu-item-1241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1241"><a href="../conference-landing/index.html">Conference Landing</a></li>
+					<li id="menu-item-1240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1240"><a href="../coworking-space-promo-page/index.html">Coworking Space Promo Page</a></li>
+					<li id="menu-item-969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-969"><a href="../members/codyhaber/index.html">Community Profile (buddyPress)</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+		<li id="menu-item-411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-411"><a href="../portfolio-boxed-grid-gap/index.html">Portfolio</a><span class="sub-menu-toggle"></span>
+			<ul class="sub-menu">
+				<li id="menu-item-415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-415"><a href="../portfolio-boxed-grid-no-gap/index.html">Portfolio Grid</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-416"><a href="../portfolio-boxed-grid-gap/index.html">Boxed Grid Gap</a></li>
+						<li id="menu-item-417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417"><a href="../portfolio-boxed-grid-no-gap/index.html">Boxed Grid No Gap</a></li>
+						<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="../portfolio-wide-grid-gap/index.html">Wide Grid Gap (Infinite)</a></li>
+						<li id="menu-item-414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a href="../portfolio-wide-grid-no-gap/index.html">Wide Grid No Gap</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="../portfolio-list/index.html">Portfolio List (Infinite)</a></li>
+				<li id="menu-item-749" class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-has-children menu-item-749"><a href="../portfolio-post/silibot-website/index.html">Single Project</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-747" class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-747"><a href="../portfolio-post/e-commerce-app/index.html">Side Gallery</a></li>
+						<li id="menu-item-746" class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-746"><a href="../portfolio-post/silibot-website/index.html">Wide Gallery</a></li>
+						<li id="menu-item-745" class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-745"><a href="../portfolio-post/corporate-branding/index.html">Image Slider</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-55"><a href="../blog-list-no-sidebar/index.html">Blog</a><span class="sub-menu-toggle"></span>
+			<ul class="sub-menu">
+				<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-52"><a href="../blog-grid-right-sidebar/index.html">Blog Grid</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="../blog-grid-right-sidebar/index.html">Right Sidebar</a></li>
+						<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="../blog-grid-left-sidebar/index.html">Left Sidebar</a></li>
+						<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="../blog-grid-no-sidebar/index.html">No Sidebar (Infinite Scroll)</a></li>
+						<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="../blog-grid-wide-no-sidebar/index.html">Wide No Sidebar</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56"><a href="../blog-list-right-sidebar/index.html">Blog List</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="../blog-list-right-sidebar/index.html">Right Sidebar</a></li>
+						<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="../blog-list-left-sidebar/index.html">Left Sidebar</a></li>
+						<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="../blog-list-no-sidebar/index.html">No Sidebar</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-553" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-553"><a href="../the-traffic-mystery-revealed/index.html">Single Post</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-555"><a href="../the-traffic-mystery-revealed/index.html">Right Sidebar</a></li>
+						<li id="menu-item-554" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-554"><a href="../the-secret-of-successful-drone/index.html">Left Sidebar</a></li>
+						<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-556"><a href="../winning-tactics-for-app/index.html">No sidebar</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-561" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-561"><a href="../why-is-everyone-talking-about-space/index.html">Post Format</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-566" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-566"><a href="../why-is-everyone-talking-about-space/index.html">Image</a></li>
+						<li id="menu-item-564" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-564"><a href="../top-7-trends-in-virtual-reality-to-watch/index.html">Gallery</a></li>
+						<li id="menu-item-563" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-563"><a href="../simple-guidance-for-you-in-space/index.html">Video</a></li>
+						<li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-565"><a href="../what-i-wish-everyone-knew-about-drone/index.html">Audio</a></li>
+						<li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-562"><a href="../crowdfunding-in-20-easy-steps/index.html">Quote</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li id="menu-item-314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-314"><a href="../shop/index.html">Shop</a><span class="sub-menu-toggle"></span>
+			<ul class="sub-menu">
+				<li id="menu-item-325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-325"><a href="../shop/index.html">Shop Left Sidebar</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-316"><a href="../shop/index.html">3 Columns</a></li>
+						<li id="menu-item-315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a href="../shop-left-sidebar-2-cols/index.html">2 Columns</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-326"><a href="../shop-right-sidebar-3-cols/index.html">Shop Right Sidebar</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="../shop-right-sidebar-3-cols/index.html">3 Columns</a></li>
+						<li id="menu-item-319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="../shop-right-sidebar-2-cols/index.html">2 Columns</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-328"><a href="../shop-no-sidebar-4-cols/index.html">Shop No Sidebar</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="../shop-no-sidebar-3-cols/index.html">3 Columns</a></li>
+						<li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="../shop-no-sidebar-4-cols/index.html">4 Columns</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-324"><a href="../product/oculus-rift/index.html">Single Product</a></li>
+				<li id="menu-item-321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="../cart/index.html">Cart</a></li>
+				<li id="menu-item-322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="../checkout/index.html">Checkout</a></li>
+				<li id="menu-item-323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../my-account/index.html">My account</a></li>
+			</ul>
+		</li>
+		<li id="menu-item-62" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62"><a href="#">Pages</a><span class="sub-menu-toggle"></span>
+			<ul class="sub-menu">
+				<li id="menu-item-529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-529"><a href="../about-us/index.html">About</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433"><a href="../about-us/index.html">About Us</a></li>
+						<li id="menu-item-363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363"><a href="../about-me/index.html">About Me</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-676"><a href="../services/index.html">Services</a></li>
+				<li id="menu-item-360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../contacts/index.html">Contacts</a></li>
+				<li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="../pricing/index.html">Pricing</a></li>
+				<li id="menu-item-528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-528"><a href="../f-a-q/index.html">F.A.Q.</a></li>
+				<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="../404.html">404 Error Page</a></li>
+				<li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="../indexbfa9.html?s=Blog">Search Results</a></li>
+				<li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66"><a href="../index1d73.html?s=nothing_found">Search Nothing Found</a></li>
+			</ul>
+		</li>
+		<li id="menu-item-63" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-63"><a href="#">Features</a><span class="sub-menu-toggle"></span>
+			<ul class="sub-menu">
+				<li id="menu-item-912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-912"><a href="https://vc.wpbakery.com/">Page Builder</a></li>
+				<li id="menu-item-910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-910"><a href="https://revolution.themepunch.com/">Revolution Slider</a></li>
+				<li id="menu-item-911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-911"><a href="../shop/index.html">WooCommerce Ready</a></li>
+				<li id="menu-item-970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-970"><a href="../members/codyhaber/forums/index.html">buddyPress Integration</a></li>
+				<li id="menu-item-906" class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-906"><a href="../forums/forum/bbpress-forums-category/bbpress-public-forum/index.html">bbPress Integration</a></li>
+			</ul>
+		</li>
+		<li id="menu-item-64" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64 has-mega-menu"><a href="#">Shortcodes</a><span class="sub-menu-toggle"></span>
+			<ul class="sub-menu">
+				<li id="menu-item-630" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-630"><a href="#">A &#8211; C</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="../accordion/index.html">Accordion</a></li>
+						<li id="menu-item-635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-635"><a href="../animated-digits/index.html">Animated Digits</a></li>
+						<li id="menu-item-636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-636"><a href="../buttons/index.html">Buttons</a></li>
+						<li id="menu-item-637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="../call-to-action/index.html">Call To Action</a></li>
+						<li id="menu-item-638" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-638"><a href="../contacts-card/index.html">Contacts Card</a></li>
+						<li id="menu-item-639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-639"><a href="../content-box/index.html">Content Box</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-640" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-640"><a href="#">D &#8211; P</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-641"><a href="../description-list/index.html">Description List</a></li>
+						<li id="menu-item-642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-642"><a href="../forms/index.html">Forms</a></li>
+						<li id="menu-item-643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href="../gallery/index.html">Gallery</a></li>
+						<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-644"><a href="../icon-with-text/index.html">Icon With Text</a></li>
+						<li id="menu-item-799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-799"><a href="../image-carousel/index.html">Image Carousel</a></li>
+						<li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-645"><a href="../partner-logos/index.html">Partner Logos</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-647"><a href="#">P &#8211; T</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href="../pricing-plans/index.html">Pricing Plans</a></li>
+						<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648"><a href="../progress-bars/index.html">Progress Bars</a></li>
+						<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649"><a href="../social-market-buttons/index.html">Social &#038; Market Buttons</a></li>
+						<li id="menu-item-650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650"><a href="../steps/index.html">Steps</a></li>
+						<li id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651"><a href="../tabs/index.html">Tabs</a></li>
+						<li id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="../team/index.html">Team</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-653"><a href="#">T &#8211; V</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li id="menu-item-654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="../team-grid/index.html">Team Grid</a></li>
+						<li id="menu-item-655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-655"><a href="../testimonials/index.html">Testimonials</a></li>
+						<li id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-656"><a href="../tour/index.html">Tour</a></li>
+						<li id="menu-item-657" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-657"><a href="../typography/index.html">Typography</a></li>
+						<li id="menu-item-658" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="../video-player/index.html">Video Player</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul></nav><div class="util site-button"><section class="widget widget_silicon_button"><a href="https://themeforest.net/item/silicon-startup-and-technology-wordpress-theme/20082761?license=regular&amp;open_purchase_for_item_id=20082761&amp;purchasable=source&amp;ref=8guild" class="btn btn-solid btn-pill btn-danger btn-nl btn-block waves-effect waves-light">Buy Theme</a><span class="text-sm text-gray"></span></section></div>        </div>
+<main class="page-wrapper"><header class="site-header header-fullwidth">
+
+	<div class="topbar font-family-nav background-solid topbar-light-skin"
+		 style="background-color: #404040;" >
+		<div class="topbar-inner">
+			<div class="topbar-inner-column">
+				<div class="additional-info hidden-sm hidden-xs"><a href='tel:+12002367785'><i class='si si-phone'></i> +12 00 236 77 85</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href='mailto:support@silicon.com'><i class='si si-email-border'></i> support@silicon.com</a></div><div class="social-bar text-no"><a href="#" class="social-button sb-facebook sb-shape-no sb-monochrome sb-light" >
+
+				<i class="socicon-facebook unhvrd"></i>
+				<i class="socicon-facebook hvrd"></i>
+			</a><a href="#" class="social-button sb-linkedin sb-shape-no sb-monochrome sb-light" >
+
+				<i class="socicon-linkedin unhvrd"></i>
+				<i class="socicon-linkedin hvrd"></i>
+			</a><a href="#" class="social-button sb-twitter sb-shape-no sb-monochrome sb-light" >
+
+				<i class="socicon-twitter unhvrd"></i>
+				<i class="socicon-twitter hvrd"></i>
+			</a><a href="#" class="social-button sb-pinterest sb-shape-no sb-monochrome sb-light" >
+
+				<i class="socicon-pinterest unhvrd"></i>
+				<i class="socicon-pinterest hvrd"></i>
+			</a></div>                </div>
+			<div class="topbar-inner-column">
+				<nav class="topbar-menu hidden-sm hidden-xs"><ul id="menu-topbar-menu" class="menu"><li id="menu-item-907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-907"><a href="#">Support</a></li>
+					<li id="menu-item-909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-909"><a href="#">FAQ</a></li>
+					<li id="menu-item-908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-908"><a href="#">Legal Notice</a></li>
+				</ul></nav><div class="lang-switcher">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English">
+				<span class="caret"></span>
+				<ul class="sub-menu">
+					<li class="lang-item lang-item-en lang-item-first current-lang">
+						<a lang="en-US" hreflang="en-US" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC" title="English" alt="English">
+							<span style="margin-left:0.3em;">English</span>
+						</a>
+					</li>
+					<li class="lang-item lang-item-fr">
+						<a lang="fr-FR" hreflang="fr-FR" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGzSURBVHjaYiyeepkBBv79+Zfnx/f379+fP38CyT9//jAyMiq5GP77wvDnJ8MfoAIGBoAAYgGqC7STApL///3/9++/pCTv////Qdz/QO4/IMna0vf/z+9/v379//37bUUTQACBNDD8Z/j87fffvyAVX79+/Q8GQDbQeKA9fM+e/Pv18/+vnwzCIkBLAAKQOAY5AIAwCEv4/4PddNUm3ji0QJyxW3rgzE0iLfqDGr2oYuu0l54AYvnz5x9Q6d+/QPQfyAQqAin9B3EOyG1A1UDj//36zfjr1y8GBoAAFI9BDgAwCMIw+P8Ho3GDO6XQ0l4MN8b2kUwYaLszqgKM/KHcDXwBxAJUD3TJ779A8h9Q5D8SAHoARP36+Rfo41+/mcA2AAQQy49ff0Cu//MPpAeI/0FdA1QNYYNVA/3wmwEYVgwMAAHE8uPHH5BqoD1//gJJLADoJKDS378Z//wFhhJAALF8A3rizz8uTmYg788fJkj4QOKREQyYxSWBhjEC/fcXZANAALF8+/anbcHlHz9+ffvx58uPX9KckkCn/gby/wLd8uvHjx96k+cD1UGiGQgAAgwA7q17ZpsMdUQAAAAASUVORK5CYII=" title="Français" alt="Français">
+							<span style="margin-left:0.3em;">Français</span>
+						</a>
+					</li>
+					<li class="lang-item lang-item-de">
+						<a lang="de-DE" hreflang="de-DE" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGzSURBVHjaYvTxcWb4+53h3z8GZpZff/79+v3n/7/fDAz/GHAAgABi+f37e3FxOZD1Dwz+/v3z9y+E/AMFv3//+Qumfv9et241QACxMDExAVWfOHkJJAEW/gUEP0EQDn78+AHE/gFOQJUAAcQiy8Ag8O+fLFj1n1+/QDp+/gQioK7fP378+vkDqOH39x9A/RJ/gE5lAAhAYhzcAACCQBDkgRXRjP034R0IaDTZTFZn0DItot37S94KLOINerEcI7aKHAHE8v/3r/9//zIA1f36/R+o4tevf1ANYNVA9P07RD9IJQMDQACxADHD3z8Ig4GMHz+AqqHagKp//fwLVA0U//v7LwMDQACx/LZiYFD7/5/53/+///79BqK/EMZ/UPACSYa/v/8DyX9A0oTxx2EGgABi+a/H8F/m339BoCoQ+g8kgRaCQvgPJJiBYmAuw39hxn+uDAABxMLwi+E/0PusRkwMvxhBGoDkH4b/v/+D2EDyz///QB1/QLb8+sP0lQEggFh+vGXYM2/SP6A2Zoaf30Ex/J+PgekHwz9gQDAz/P0FYrAyMfz7wcDAzPDtFwNAgAEAd3SIyRitX1gAAAAASUVORK5CYII=" title="Deutsch" alt="Deutsch">
+							<span style="margin-left:0.3em;">Deutsch</span>
+						</a>
+					</li>
+					<li class="lang-item lang-item-es">
+						<a lang="es-ES" hreflang="es-ES" href="#">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVHjaYvzPgAD/UNlYEUAAmuTYAAAQhAEYqF/zFbe50RZ1cMmS9TLi0pJLRjZohAMTGFUN9HdnHgEE1sDw//+Tp0ClINW/f0NIKPoFJH/9//ULyGaUlQXaABBALAx/Gf4zAt31F4i+ffj3/cN/XrFfzOx//v///f//LzACM/79ZmD8/e8TA0AAMYHdDVT958vXP38nMDB0s3x94/Tj5y+YahhiAKLfQKUAAcQEdtJfoDHMF2L+vPzDmFXLelf551tGFOOhev4A/QgQQExgHwAd8IdFT/Wz6j+GhlpmXSOW/2z///8Eq/sJ18Dw/zdQA0AAMQExxJjjdy9x2/76EfLz4MXdP/i+wsyGkkA3Aw3984cBIIAYfzIwMKel/bt3jwEaLNAwgZIQxp/fDH/+MqqovL14ESCAWICeZvr9h0FSEhSgwBgAygFDEMT+wwAhgQgc4kAEVAwQQIxfUSMSTxxDAECAAQAJWke8v4u1tAAAAABJRU5ErkJggg==" title="Español" alt="Español">
+							<span style="margin-left:0.3em;">Español</span>
+						</a>
+					</li>
+				</ul>
+			</div><a href="../wp-login.html" class="login-link">
+				<i class="si si-person"></i>
+				<span>&nbsp;Login or Create account</span>
+			</a>                </div>
+		</div>
+	</div>
+
+	<div class="navbar-horizontal navbar-solid menu-skin-dark border-default-bottom"
+		 style="background-color: #ffffff;" >
+
+		<div class="site-search">
+			<div class="inner">
+				<div class="search-form">
+					<form method="get" class="search-box" action="http://silicon.8guild.com/" autocomplete="off">
+						<input type="text" name="s"
+							   placeholder="Search"
+							   value="">
+						<button type="submit"><i class="si si-search"></i></button>
+					</form>
+					<div class="search-tools font-family-nav">
+						<span class="search-clear">Clear</span>
+						<span class="search-close"><i class="si si-cross"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar-inner">
+			<div class="navbar-branding">
+				<div class="mobile-menu-toggle">
+					<i class="si si-menu"></i>
+				</div>
+				<a href="../index.html" class="site-logo" rel="home" itemprop="url" style="width: 120px;"><img src="../wp-content/themes/silicon/assets/img/logo.png" alt="Silicon" class="custom-logo" itemprop="logo"></a><a href="../index.html" class="mobile-logo" style="width: 120px;"><img src="../wp-content/themes/silicon/assets/img/logo.png" alt="Silicon" class="custom-logo" itemprop="logo"></a>            </div>
+			<div class="navbar-utils font-family-nav">
+				<div class="inner">
+
+					<div class="util site-search-toggle">
+						<i class="si si-search"></i>
+					</div>
+					<div class="util cart-toggle">
+						<span class="text-lg">Cart</span>
+						<span class="product-count text-xs" data-si-product-count="0">0</span>
+					</div><div class="util site-button"><section class="widget widget_silicon_button"><a href="https://themeforest.net/item/silicon-startup-and-technology-wordpress-theme/20082761?license=regular&amp;open_purchase_for_item_id=20082761&amp;purchasable=source&amp;ref=8guild" class="btn btn-solid btn-pill btn-danger btn-nl btn-block waves-effect waves-light">Buy Theme</a><span class="text-sm text-gray"></span></section></div>                </div>
+			</div>
+		</div>
+
+		<div class="menu-wrap">
+			<nav class="main-navigation font-family-nav"><ul id="menu-primary-menu-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-31 has-mega-menu"><a href="../index.html">Home</a><span class="sub-menu-toggle"></span>
+				<ul class="sub-menu">
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32"><a href="#">Presentation, Showcase &#038; Personal</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-36"><a href="../index.html">Theme Presentation Landing</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1229"><a href="../mobile-app-showcase/index.html">Mobile App Showcase</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1230"><a href="../web-app-presentation/index.html">Web App Presentation</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1231"><a href="../product-landing-page/index.html">Product Landing Page</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a href="../freelancer-cvportfolio/index.html">Freelancer CV/Portfolio</a></li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-33"><a href="#">Business &#038; E-Commerce</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a href="../digital-agency/index.html">Digital Agency</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="../online-shop-woocommerce/index.html">Online Shop (WooCommerce)</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="../venture-capital-investments/index.html">Venture Capital Investments</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1236"><a href="../startup-crowdfunding/index.html">Startup Crowdfunding</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1157 current_page_item menu-item-1237"><a href="index.html">Enterprise Software Development</a></li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34"><a href="#">Writing &#038; Learning</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="../corporate-blog-frontpage/index.html">Corporate Blog Frontpage</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239"><a href="../personal-blog-frontpage/index.html">Personal Blog Frontpage</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-905"><a href="../forums/topic/bbpress-forum-favorite-topic/index.html">Helpdesk / Forum (bbPress)</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1077"><a href="../docs/index.html">Online Documentation</a></li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35"><a href="#">Meeting &#038; Collaboration</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1241"><a href="../conference-landing/index.html">Conference Landing</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1240"><a href="../coworking-space-promo-page/index.html">Coworking Space Promo Page</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-969"><a href="../members/codyhaber/index.html">Community Profile (buddyPress)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-411"><a href="../portfolio-boxed-grid-gap/index.html">Portfolio</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-415"><a href="../portfolio-boxed-grid-no-gap/index.html">Portfolio Grid</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-416"><a href="../portfolio-boxed-grid-gap/index.html">Boxed Grid Gap</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417"><a href="../portfolio-boxed-grid-no-gap/index.html">Boxed Grid No Gap</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="../portfolio-wide-grid-gap/index.html">Wide Grid Gap (Infinite)</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a href="../portfolio-wide-grid-no-gap/index.html">Wide Grid No Gap</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="../portfolio-list/index.html">Portfolio List (Infinite)</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-has-children menu-item-749"><a href="../portfolio-post/silibot-website/index.html">Single Project</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-747"><a href="../portfolio-post/e-commerce-app/index.html">Side Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-746"><a href="../portfolio-post/silibot-website/index.html">Wide Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-745"><a href="../portfolio-post/corporate-branding/index.html">Image Slider</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-55"><a href="../blog-list-no-sidebar/index.html">Blog</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-52"><a href="../blog-grid-right-sidebar/index.html">Blog Grid</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="../blog-grid-right-sidebar/index.html">Right Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="../blog-grid-left-sidebar/index.html">Left Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="../blog-grid-no-sidebar/index.html">No Sidebar (Infinite Scroll)</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="../blog-grid-wide-no-sidebar/index.html">Wide No Sidebar</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56"><a href="../blog-list-right-sidebar/index.html">Blog List</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="../blog-list-right-sidebar/index.html">Right Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="../blog-list-left-sidebar/index.html">Left Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="../blog-list-no-sidebar/index.html">No Sidebar</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-553"><a href="../the-traffic-mystery-revealed/index.html">Single Post</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-555"><a href="../the-traffic-mystery-revealed/index.html">Right Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-554"><a href="../the-secret-of-successful-drone/index.html">Left Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-556"><a href="../winning-tactics-for-app/index.html">No sidebar</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-561"><a href="../why-is-everyone-talking-about-space/index.html">Post Format</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-566"><a href="../why-is-everyone-talking-about-space/index.html">Image</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-564"><a href="../top-7-trends-in-virtual-reality-to-watch/index.html">Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-563"><a href="../simple-guidance-for-you-in-space/index.html">Video</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-565"><a href="../what-i-wish-everyone-knew-about-drone/index.html">Audio</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-562"><a href="../crowdfunding-in-20-easy-steps/index.html">Quote</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-314"><a href="../shop/index.html">Shop</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-325"><a href="../shop/index.html">Shop Left Sidebar</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-316"><a href="../shop/index.html">3 Columns</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a href="../shop-left-sidebar-2-cols/index.html">2 Columns</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-326"><a href="../shop-right-sidebar-3-cols/index.html">Shop Right Sidebar</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="../shop-right-sidebar-3-cols/index.html">3 Columns</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="../shop-right-sidebar-2-cols/index.html">2 Columns</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-328"><a href="../shop-no-sidebar-4-cols/index.html">Shop No Sidebar</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="../shop-no-sidebar-3-cols/index.html">3 Columns</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="../shop-no-sidebar-4-cols/index.html">4 Columns</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-324"><a href="../product/oculus-rift/index.html">Single Product</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="../cart/index.html">Cart</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="../checkout/index.html">Checkout</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../my-account/index.html">My account</a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62"><a href="#">Pages</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-529"><a href="../about-us/index.html">About</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433"><a href="../about-us/index.html">About Us</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363"><a href="../about-me/index.html">About Me</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-676"><a href="../services/index.html">Services</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../contacts/index.html">Contacts</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="../pricing/index.html">Pricing</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-528"><a href="../f-a-q/index.html">F.A.Q.</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="../404.html">404 Error Page</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="../indexbfa9.html?s=Blog">Search Results</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66"><a href="../index1d73.html?s=nothing_found">Search Nothing Found</a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-63"><a href="#">Features</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-912"><a href="https://vc.wpbakery.com/">Page Builder</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-910"><a href="https://revolution.themepunch.com/">Revolution Slider</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-911"><a href="../shop/index.html">WooCommerce Ready</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-970"><a href="../members/codyhaber/forums/index.html">buddyPress Integration</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-906"><a href="../forums/forum/bbpress-forums-category/bbpress-public-forum/index.html">bbPress Integration</a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64 has-mega-menu"><a href="#">Shortcodes</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-630"><a href="#">A &#8211; C</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="../accordion/index.html">Accordion</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-635"><a href="../animated-digits/index.html">Animated Digits</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-636"><a href="../buttons/index.html">Buttons</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="../call-to-action/index.html">Call To Action</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-638"><a href="../contacts-card/index.html">Contacts Card</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-639"><a href="../content-box/index.html">Content Box</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-640"><a href="#">D &#8211; P</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-641"><a href="../description-list/index.html">Description List</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-642"><a href="../forms/index.html">Forms</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href="../gallery/index.html">Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-644"><a href="../icon-with-text/index.html">Icon With Text</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-799"><a href="../image-carousel/index.html">Image Carousel</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-645"><a href="../partner-logos/index.html">Partner Logos</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-647"><a href="#">P &#8211; T</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href="../pricing-plans/index.html">Pricing Plans</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648"><a href="../progress-bars/index.html">Progress Bars</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649"><a href="../social-market-buttons/index.html">Social &#038; Market Buttons</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650"><a href="../steps/index.html">Steps</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651"><a href="../tabs/index.html">Tabs</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="../team/index.html">Team</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-653"><a href="#">T &#8211; V</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="../team-grid/index.html">Team Grid</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-655"><a href="../testimonials/index.html">Testimonials</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-656"><a href="../tour/index.html">Tour</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-657"><a href="../typography/index.html">Typography</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="../video-player/index.html">Video Player</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul></nav>            </div>
+
+	</div>
+
+	<div class="navbar-horizontal navbar-sticky menu-skin-dark border-default-bottom"
+		 style="background-color: #ffffff;" >
+
+		<div class="site-search">
+			<div class="inner">
+				<div class="search-form">
+					<form method="get" class="search-box" action="http://silicon.8guild.com/" autocomplete="off">
+						<input type="text" name="s"
+							   placeholder="Search"
+							   value="">
+						<button type="submit"><i class="si si-search"></i></button>
+					</form>
+					<div class="search-tools font-family-nav">
+						<span class="search-clear">Clear</span>
+						<span class="search-close"><i class="si si-cross"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar-inner">
+			<div class="navbar-branding">
+				<div class="mobile-menu-toggle">
+					<i class="si si-menu"></i>
+				</div>
+				<a href="../index.html" class="site-logo" rel="home" itemprop="url" style="width: 120px;"><img src="../wp-content/themes/silicon/assets/img/logo.png" alt="Silicon" class="custom-logo" itemprop="logo"></a>                </div>
+			<div class="navbar-utils font-family-nav">
+				<div class="inner">
+
+					<div class="util site-search-toggle">
+						<i class="si si-search"></i>
+					</div>
+					<div class="util cart-toggle">
+						<span class="text-lg">Cart</span>
+						<span class="product-count text-xs" data-si-product-count="0">0</span>
+					</div><div class="util site-button"><section class="widget widget_silicon_button"><a href="https://themeforest.net/item/silicon-startup-and-technology-wordpress-theme/20082761?license=regular&amp;open_purchase_for_item_id=20082761&amp;purchasable=source&amp;ref=8guild" class="btn btn-solid btn-pill btn-danger btn-nl btn-block waves-effect waves-light">Buy Theme</a><span class="text-sm text-gray"></span></section></div>                    </div>
+			</div>
+		</div>
+
+		<div class="menu-wrap">
+			<nav class="main-navigation font-family-nav"><ul id="menu-primary-menu-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-31 has-mega-menu"><a href="../index.html">Home</a><span class="sub-menu-toggle"></span>
+				<ul class="sub-menu">
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32"><a href="#">Presentation, Showcase &#038; Personal</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-36"><a href="../index.html">Theme Presentation Landing</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1229"><a href="../mobile-app-showcase/index.html">Mobile App Showcase</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1230"><a href="../web-app-presentation/index.html">Web App Presentation</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1231"><a href="../product-landing-page/index.html">Product Landing Page</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a href="../freelancer-cvportfolio/index.html">Freelancer CV/Portfolio</a></li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-33"><a href="#">Business &#038; E-Commerce</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1233"><a href="../digital-agency/index.html">Digital Agency</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234"><a href="../online-shop-woocommerce/index.html">Online Shop (WooCommerce)</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1235"><a href="../venture-capital-investments/index.html">Venture Capital Investments</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1236"><a href="../startup-crowdfunding/index.html">Startup Crowdfunding</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1157 current_page_item menu-item-1237"><a href="index.html">Enterprise Software Development</a></li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34"><a href="#">Writing &#038; Learning</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238"><a href="../corporate-blog-frontpage/index.html">Corporate Blog Frontpage</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1239"><a href="../personal-blog-frontpage/index.html">Personal Blog Frontpage</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-905"><a href="../forums/topic/bbpress-forum-favorite-topic/index.html">Helpdesk / Forum (bbPress)</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1077"><a href="../docs/index.html">Online Documentation</a></li>
+						</ul>
+					</li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-35"><a href="#">Meeting &#038; Collaboration</a><span class="sub-menu-toggle"></span>
+						<ul class="sub-menu">
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1241"><a href="../conference-landing/index.html">Conference Landing</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1240"><a href="../coworking-space-promo-page/index.html">Coworking Space Promo Page</a></li>
+							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-969"><a href="../members/codyhaber/index.html">Community Profile (buddyPress)</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-411"><a href="../portfolio-boxed-grid-gap/index.html">Portfolio</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-415"><a href="../portfolio-boxed-grid-no-gap/index.html">Portfolio Grid</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-416"><a href="../portfolio-boxed-grid-gap/index.html">Boxed Grid Gap</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417"><a href="../portfolio-boxed-grid-no-gap/index.html">Boxed Grid No Gap</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a href="../portfolio-wide-grid-gap/index.html">Wide Grid Gap (Infinite)</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a href="../portfolio-wide-grid-no-gap/index.html">Wide Grid No Gap</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412"><a href="../portfolio-list/index.html">Portfolio List (Infinite)</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-has-children menu-item-749"><a href="../portfolio-post/silibot-website/index.html">Single Project</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-747"><a href="../portfolio-post/e-commerce-app/index.html">Side Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-746"><a href="../portfolio-post/silibot-website/index.html">Wide Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-silicon_portfolio menu-item-745"><a href="../portfolio-post/corporate-branding/index.html">Image Slider</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-55"><a href="../blog-list-no-sidebar/index.html">Blog</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-52"><a href="../blog-grid-right-sidebar/index.html">Blog Grid</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="../blog-grid-right-sidebar/index.html">Right Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="../blog-grid-left-sidebar/index.html">Left Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="../blog-grid-no-sidebar/index.html">No Sidebar (Infinite Scroll)</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="../blog-grid-wide-no-sidebar/index.html">Wide No Sidebar</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56"><a href="../blog-list-right-sidebar/index.html">Blog List</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="../blog-list-right-sidebar/index.html">Right Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="../blog-list-left-sidebar/index.html">Left Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="../blog-list-no-sidebar/index.html">No Sidebar</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-553"><a href="../the-traffic-mystery-revealed/index.html">Single Post</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-555"><a href="../the-traffic-mystery-revealed/index.html">Right Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-554"><a href="../the-secret-of-successful-drone/index.html">Left Sidebar</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-556"><a href="../winning-tactics-for-app/index.html">No sidebar</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-561"><a href="../why-is-everyone-talking-about-space/index.html">Post Format</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-566"><a href="../why-is-everyone-talking-about-space/index.html">Image</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-564"><a href="../top-7-trends-in-virtual-reality-to-watch/index.html">Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-563"><a href="../simple-guidance-for-you-in-space/index.html">Video</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-565"><a href="../what-i-wish-everyone-knew-about-drone/index.html">Audio</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-562"><a href="../crowdfunding-in-20-easy-steps/index.html">Quote</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-314"><a href="../shop/index.html">Shop</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-325"><a href="../shop/index.html">Shop Left Sidebar</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-316"><a href="../shop/index.html">3 Columns</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-315"><a href="../shop-left-sidebar-2-cols/index.html">2 Columns</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-326"><a href="../shop-right-sidebar-3-cols/index.html">Shop Right Sidebar</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="../shop-right-sidebar-3-cols/index.html">3 Columns</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-319"><a href="../shop-right-sidebar-2-cols/index.html">2 Columns</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-328"><a href="../shop-no-sidebar-4-cols/index.html">Shop No Sidebar</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-317"><a href="../shop-no-sidebar-3-cols/index.html">3 Columns</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="../shop-no-sidebar-4-cols/index.html">4 Columns</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-324"><a href="../product/oculus-rift/index.html">Single Product</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321"><a href="../cart/index.html">Cart</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-322"><a href="../checkout/index.html">Checkout</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-323"><a href="../my-account/index.html">My account</a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-62"><a href="#">Pages</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-529"><a href="../about-us/index.html">About</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433"><a href="../about-us/index.html">About Us</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-363"><a href="../about-me/index.html">About Me</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-676"><a href="../services/index.html">Services</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-360"><a href="../contacts/index.html">Contacts</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="../pricing/index.html">Pricing</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-528"><a href="../f-a-q/index.html">F.A.Q.</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="../404.html">404 Error Page</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-65"><a href="../indexbfa9.html?s=Blog">Search Results</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66"><a href="../index1d73.html?s=nothing_found">Search Nothing Found</a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-63"><a href="#">Features</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-912"><a href="https://vc.wpbakery.com/">Page Builder</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-910"><a href="https://revolution.themepunch.com/">Revolution Slider</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-911"><a href="../shop/index.html">WooCommerce Ready</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-970"><a href="../members/codyhaber/forums/index.html">buddyPress Integration</a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-forum menu-item-906"><a href="../forums/forum/bbpress-forums-category/bbpress-public-forum/index.html">bbPress Integration</a></li>
+					</ul>
+				</li>
+				<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64 has-mega-menu"><a href="#">Shortcodes</a><span class="sub-menu-toggle"></span>
+					<ul class="sub-menu">
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-630"><a href="#">A &#8211; C</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="../accordion/index.html">Accordion</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-635"><a href="../animated-digits/index.html">Animated Digits</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-636"><a href="../buttons/index.html">Buttons</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="../call-to-action/index.html">Call To Action</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-638"><a href="../contacts-card/index.html">Contacts Card</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-639"><a href="../content-box/index.html">Content Box</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-640"><a href="#">D &#8211; P</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-641"><a href="../description-list/index.html">Description List</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-642"><a href="../forms/index.html">Forms</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-643"><a href="../gallery/index.html">Gallery</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-644"><a href="../icon-with-text/index.html">Icon With Text</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-799"><a href="../image-carousel/index.html">Image Carousel</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-645"><a href="../partner-logos/index.html">Partner Logos</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-647"><a href="#">P &#8211; T</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href="../pricing-plans/index.html">Pricing Plans</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-648"><a href="../progress-bars/index.html">Progress Bars</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-649"><a href="../social-market-buttons/index.html">Social &#038; Market Buttons</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-650"><a href="../steps/index.html">Steps</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-651"><a href="../tabs/index.html">Tabs</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-652"><a href="../team/index.html">Team</a></li>
+							</ul>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-653"><a href="#">T &#8211; V</a><span class="sub-menu-toggle"></span>
+							<ul class="sub-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="../team-grid/index.html">Team Grid</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-655"><a href="../testimonials/index.html">Testimonials</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-656"><a href="../tour/index.html">Tour</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-657"><a href="../typography/index.html">Typography</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-658"><a href="../video-player/index.html">Video Player</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul></nav>                </div>
+
+	</div>
+
+</header>
+	<div class="content-wrapper"><article id="post-1157" class="post-1157 page type-page status-publish hentry">
+		<section class="fw-section layout-full without-overlay with-parallax padding-top-7x padding-bottom-7x" data-offset-top="180" data-jarallax='{"type":"scroll","speed":0.4,"imgWidth":1920,"imgHeight":1200,"noAndroid":"true","noIos":"true"}' style="background-image: url(../wp-content/uploads/2017/10/enterprise_hero_bg.jpg);">
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12"><img width="1416" height="414" src="../wp-content/uploads/2017/10/enterprise_hero_text.png" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_hero_text.png 1416w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_hero_text-300x88.png 300w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_hero_text-768x225.png 768w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_hero_text-1024x299.png 1024w" sizes="(max-width: 1416px) 100vw, 1416px" /><div class="text-center"><a href="#" class="btn btn-solid btn-pill btn-primary btn-nl">Let&#039;s Discuss Your Project</a></div></div>
+				</div>
+			</div>
+		</section><section class="fw-section layout-boxed without-overlay without-parallax vc_custom_1509452225037 padding-top-3x custom-bg-position" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2>What We Do</h2>
+				</div><div class="row"><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_01.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_01.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_01-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">Web</h3>
+				</div></div><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_02.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_02.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_02-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">Mobile</h3>
+				</div></div><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_03.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_03.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_03-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">Software</h3>
+				</div></div><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_04.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_04.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_04-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">Cloud</h3>
+				</div></div></div><div class="row"><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_05.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_05.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_05-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">Big Data</h3>
+				</div></div><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_06.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_06.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_06-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">E-Commerce</h3>
+				</div></div><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_07.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_07.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_07-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">CMS</h3>
+				</div></div><div class="col-lg-3 col-md-3 col-sm-6 padding-bottom-3x"><img width="540" height="240" src="../wp-content/uploads/2017/10/enterprise_category_08.jpg" class="single-image img-default block-center attachment-full size-full" data-aos="" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_08.jpg 540w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_category_08-300x133.jpg 300w" sizes="(max-width: 540px) 100vw, 540px" /><div class="text-block padding-top-1x"><h3 style="text-align: center;">IoT</h3>
+				</div></div></div><div class="text-block margin-bottom-2x"><h2>Some Words About Us</h2>
+				</div><div class="row padding-bottom-3x"><div class="col-sm-6 col-xs-12"><div class="text-block"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu dignissim odio. Nullam lobortis viverra sapien. Vivamus fringilla rutrum massa ac mollis.</p>
+					<p>Mauris eleifend justo at dapibus rutrum. Maecenas a pulvinar lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat mauris non nisl sagittis placerat. Phasellus at libero at elit suscipit tincidunt eget ac arcu. In non porta purus. Nam sollicitudin cursus erat sed rutrum.</p>
+				</div></div><div class="col-sm-6 col-xs-12"><div class="text-block"><p>Maecenas vel leo eu justo pharetra volutpat viverra sit amet nisi. Quisque non diam fermentum, consequat augue vel, pretium purus. Donec malesuada velit sit amet nunc malesuada scelerisque.</p>
+					<p>Fusce sit amet finibus sem, ac blandit massa. Phasellus ut eros ac sem luctus sollicitudin. Cras molestie est bibendum erat pretium rutrum. Vivamus in congue est, cursus tempus risus. Nam luctus sodales consequat.</p>
+				</div></div></div><div class="text-block margin-bottom-2x"><h2>Our Skill Set</h2>
+				</div><div class="row padding-bottom-3x"><div class="col-md-4 col-sm-12"><div class="progress progress-dark">
+					<h4 class="progress-bar-label">Java &nbsp; &mdash; &nbsp; 90%</h4>
+					<div class="progress-bar">
+						<span class="rails background-primary" style="" data-progress-value="90"></span>
+					</div>
+				</div><div class="progress progress-dark">
+					<h4 class="progress-bar-label">HTML5 &nbsp; &mdash; &nbsp; 65%</h4>
+					<div class="progress-bar">
+						<span class="rails background-primary" style="" data-progress-value="65"></span>
+					</div>
+				</div></div><div class="col-md-4 col-sm-12"><div class="progress progress-dark">
+					<h4 class="progress-bar-label">PHP &nbsp; &mdash; &nbsp; 73%</h4>
+					<div class="progress-bar">
+						<span class="rails background-primary" style="" data-progress-value="73"></span>
+					</div>
+				</div><div class="progress progress-dark">
+					<h4 class="progress-bar-label">Python &nbsp; &mdash; &nbsp; 95%</h4>
+					<div class="progress-bar">
+						<span class="rails background-primary" style="" data-progress-value="95"></span>
+					</div>
+				</div></div><div class="col-md-4 col-sm-12"><div class="progress progress-dark">
+					<h4 class="progress-bar-label">SQL &nbsp; &mdash; &nbsp; 80%</h4>
+					<div class="progress-bar">
+						<span class="rails background-primary" style="" data-progress-value="80"></span>
+					</div>
+				</div><div class="progress progress-dark">
+					<h4 class="progress-bar-label">Cross platform &nbsp; &mdash; &nbsp; 75%</h4>
+					<div class="progress-bar">
+						<span class="rails background-primary" style="" data-progress-value="75"></span>
+					</div>
+				</div></div></div></div>
+			</div>
+		</div>
+	</section><section class="fw-section layout-boxed without-overlay without-parallax padding-bottom-3x" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2>Successful Case Studies</h2>
+				</div><nav id="portfolio-af5855bd-filter" class="nav-filters isotope-filter text-left" data-grid-id="portfolio-af5855bd-grid"><ul><li class="active"><a href="#" data-filter="*">All</a></li><li><a href="#" data-filter=".big-data">Big Data</a></li><li><a href="#" data-filter=".e-commerce">E-Commerce</a></li><li><a href="#" data-filter=".mobile">Mobile</a></li><li><a href="#" data-filter=".software">Software</a></li><li><a href="#" data-filter=".web">Web</a></li></ul></nav><div id="portfolio-af5855bd-grid" class="masonry-grid isotope-grid col-3 grid-with-gap filtered-grid">
+					<div class="gutter-sizer"></div>
+					<div class="grid-sizer"></div>
+
+					<div class="grid-item mobile"><article class="portfolio-post portfolio-post-tile post-1178 silicon_portfolio type-silicon_portfolio status-publish has-post-thumbnail hentry silicon_portfolio_category-mobile">
+
+						<img width="740" height="800" src="../wp-content/uploads/2017/10/enterprise_portfolio_cover_img_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_01.jpg 740w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_01-278x300.jpg 278w" sizes="(max-width: 740px) 100vw, 740px" />
+						<div class="portfolio-post-tile-icon-links">
+							<a href="#" class="navi-link-color" data-si-gallery-inline='[{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_05.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_06.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_03.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_04.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_01.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_02.jpg","w":1540,"h":800}]'><i class="si si-view"></i></a>        <a href="../portfolio-post/apps-for-healthcare/index.html" class="navi-link-color"><i class="si si-link"></i></a>
+						</div>
+
+						<h3 class="portfolio-tile-title"><a href="../portfolio-post/apps-for-healthcare/index.html" class="text-white">Apps for healthcare</a></h3>
+						<div class="portfolio-post-info">
+							<div class="svg-bg">
+								<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+									<path d="m 0 10 l 100 -10, 0 100, -100 0 z" fill="white"/>
+								</svg>
+							</div>
+
+							<h3 class="portfolio-tile-title"><a href="../portfolio-post/apps-for-healthcare/index.html" class="navi-link-color navi-link-hover-color">Apps for healthcare</a></h3>
+							<p class="portfolio-tile-text">Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							</p>
+						</div>
+					</article>
+					</div><div class="grid-item e-commerce"><article class="portfolio-post portfolio-post-tile post-1179 silicon_portfolio type-silicon_portfolio status-publish has-post-thumbnail hentry silicon_portfolio_category-e-commerce">
+
+					<img width="740" height="800" src="../wp-content/uploads/2017/10/enterprise_portfolio_cover_img_02.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_02.jpg 740w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_02-278x300.jpg 278w" sizes="(max-width: 740px) 100vw, 740px" />
+					<div class="portfolio-post-tile-icon-links">
+						<a href="#" class="navi-link-color" data-si-gallery-inline='[{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_06.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_05.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_04.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_03.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_02.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_01.jpg","w":1540,"h":800}]'><i class="si si-view"></i></a>        <a href="../portfolio-post/education-and-human-resources/index.html" class="navi-link-color"><i class="si si-link"></i></a>
+					</div>
+
+					<h3 class="portfolio-tile-title"><a href="../portfolio-post/education-and-human-resources/index.html" class="text-white">Education and human resources</a></h3>
+					<div class="portfolio-post-info">
+						<div class="svg-bg">
+							<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="m 0 10 l 100 -10, 0 100, -100 0 z" fill="white"/>
+							</svg>
+						</div>
+
+						<h3 class="portfolio-tile-title"><a href="../portfolio-post/education-and-human-resources/index.html" class="navi-link-color navi-link-hover-color">Education and human resources</a></h3>
+						<p class="portfolio-tile-text">Fusce suscipit, felis quis scelerisque imperdiet, est urna iaculis neque, non feugiat mauris sapien id nisl.
+						</p>
+					</div>
+				</article>
+				</div><div class="grid-item software"><article class="portfolio-post portfolio-post-tile post-1180 silicon_portfolio type-silicon_portfolio status-publish has-post-thumbnail hentry silicon_portfolio_category-software">
+
+					<img width="740" height="800" src="../wp-content/uploads/2017/10/enterprise_portfolio_cover_img_03.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_03.jpg 740w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_03-278x300.jpg 278w" sizes="(max-width: 740px) 100vw, 740px" />
+					<div class="portfolio-post-tile-icon-links">
+						<a href="#" class="navi-link-color" data-si-gallery-inline='[{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_06.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_05.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_04.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_03.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_02.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_01.jpg","w":1540,"h":800}]'><i class="si si-view"></i></a>        <a href="../portfolio-post/financial-software-development/index.html" class="navi-link-color"><i class="si si-link"></i></a>
+					</div>
+
+					<h3 class="portfolio-tile-title"><a href="../portfolio-post/financial-software-development/index.html" class="text-white">Financial software development</a></h3>
+					<div class="portfolio-post-info">
+						<div class="svg-bg">
+							<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="m 0 10 l 100 -10, 0 100, -100 0 z" fill="white"/>
+							</svg>
+						</div>
+
+						<h3 class="portfolio-tile-title"><a href="../portfolio-post/financial-software-development/index.html" class="navi-link-color navi-link-hover-color">Financial software development</a></h3>
+						<p class="portfolio-tile-text">Mauris facilisis tempus quam, eu lacinia purus ullamcorper ac.
+						</p>
+					</div>
+				</article>
+				</div><div class="grid-item e-commerce"><article class="portfolio-post portfolio-post-tile post-1181 silicon_portfolio type-silicon_portfolio status-publish has-post-thumbnail hentry silicon_portfolio_category-e-commerce">
+
+					<img width="740" height="800" src="../wp-content/uploads/2017/10/enterprise_portfolio_cover_img_04.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_04.jpg 740w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_04-278x300.jpg 278w" sizes="(max-width: 740px) 100vw, 740px" />
+					<div class="portfolio-post-tile-icon-links">
+						<a href="#" class="navi-link-color" data-si-gallery-inline='[{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_05.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_06.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_03.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_04.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_02.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_01.jpg","w":1540,"h":800}]'><i class="si si-view"></i></a>        <a href="../portfolio-post/e-commerce-everywhere/index.html" class="navi-link-color"><i class="si si-link"></i></a>
+					</div>
+
+					<h3 class="portfolio-tile-title"><a href="../portfolio-post/e-commerce-everywhere/index.html" class="text-white">E-commerce everywhere</a></h3>
+					<div class="portfolio-post-info">
+						<div class="svg-bg">
+							<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="m 0 10 l 100 -10, 0 100, -100 0 z" fill="white"/>
+							</svg>
+						</div>
+
+						<h3 class="portfolio-tile-title"><a href="../portfolio-post/e-commerce-everywhere/index.html" class="navi-link-color navi-link-hover-color">E-commerce everywhere</a></h3>
+						<p class="portfolio-tile-text">Morbi elementum tempor aliquet. Nunc tempus neque eleifend, tristique eros a, tempor diam.
+						</p>
+					</div>
+				</article>
+				</div><div class="grid-item big-data"><article class="portfolio-post portfolio-post-tile post-1182 silicon_portfolio type-silicon_portfolio status-publish has-post-thumbnail hentry silicon_portfolio_category-big-data">
+
+					<img width="740" height="800" src="../wp-content/uploads/2017/10/enterprise_portfolio_cover_img_05.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_05.jpg 740w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_05-278x300.jpg 278w" sizes="(max-width: 740px) 100vw, 740px" />
+					<div class="portfolio-post-tile-icon-links">
+						<a href="#" class="navi-link-color" data-si-gallery-inline='[{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_05.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_06.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_03.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_04.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_02.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_01.jpg","w":1540,"h":800}]'><i class="si si-view"></i></a>        <a href="../portfolio-post/network-management-system/index.html" class="navi-link-color"><i class="si si-link"></i></a>
+					</div>
+
+					<h3 class="portfolio-tile-title"><a href="../portfolio-post/network-management-system/index.html" class="text-white">Network management system</a></h3>
+					<div class="portfolio-post-info">
+						<div class="svg-bg">
+							<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="m 0 10 l 100 -10, 0 100, -100 0 z" fill="white"/>
+							</svg>
+						</div>
+
+						<h3 class="portfolio-tile-title"><a href="../portfolio-post/network-management-system/index.html" class="navi-link-color navi-link-hover-color">Network management system</a></h3>
+						<p class="portfolio-tile-text">Sed eu quam enim. Pellentesque mollis tristique dignissim. Ut nec malesuada justo. Nulla blandit nec sem eu efficitur
+						</p>
+					</div>
+				</article>
+				</div><div class="grid-item web"><article class="portfolio-post portfolio-post-tile post-1185 silicon_portfolio type-silicon_portfolio status-publish has-post-thumbnail hentry silicon_portfolio_category-web">
+
+					<img width="740" height="800" src="../wp-content/uploads/2017/10/enterprise_portfolio_cover_img_12.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_12.jpg 740w, http://silicon.8guild.com/wp-content/uploads/2017/10/enterprise_portfolio_cover_img_12-278x300.jpg 278w" sizes="(max-width: 740px) 100vw, 740px" />
+					<div class="portfolio-post-tile-icon-links">
+						<a href="#" class="navi-link-color" data-si-gallery-inline='[{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_04.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_05.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_06.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_03.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_01.jpg","w":1540,"h":800},{"src":"http:\/\/silicon.8guild.com\/wp-content\/uploads\/2017\/10\/enterprise_portfolio_gallery_02.jpg","w":1540,"h":800}]'><i class="si si-view"></i></a>        <a href="../portfolio-post/web-company-portals/index.html" class="navi-link-color"><i class="si si-link"></i></a>
+					</div>
+
+					<h3 class="portfolio-tile-title"><a href="../portfolio-post/web-company-portals/index.html" class="text-white">Web company portals</a></h3>
+					<div class="portfolio-post-info">
+						<div class="svg-bg">
+							<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="m 0 10 l 100 -10, 0 100, -100 0 z" fill="white"/>
+							</svg>
+						</div>
+
+						<h3 class="portfolio-tile-title"><a href="../portfolio-post/web-company-portals/index.html" class="navi-link-color navi-link-hover-color">Web company portals</a></h3>
+						<p class="portfolio-tile-text">Vivamus at ultricies elit, vel faucibus erat. Aliquam et accumsan dolor, at dignissim nisl.
+						</p>
+					</div>
+				</article>
+				</div></div>
+
+					<section class="pagination font-family-nav border-default-top border-default-bottom text-center">
+						<div class="spinner-wrap">
+							<div class="spinner-layer border-color-primary">
+								<div class="circle-clipper left">
+									<div class="circle"></div>
+								</div>
+								<div class="gap-patch">
+									<div class="circle"></div>
+								</div>
+								<div class="circle-clipper right">
+									<div class="circle"></div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="btn btn-link btn-pill btn-sm btn-default" rel="nofollow" data-si-load-more='{"action":"silicon_portfolio_load_more","nonce":"13a8e024a8","type":"with-gap","query":{"posts_per_page":6,"orderby":"date","order":"ASC","post_type":"silicon_portfolio","post_status":"publish","meta_query":[{"key":"_thumbnail_id","compare":"EXISTS"}],"tax_query":[{"taxonomy":"silicon_portfolio_category","field":"slug","terms":["big-data","e-commerce","mobile","software","web"]}]},"page":2,"total":12,"perPage":6,"gridID":"portfolio-af5855bd-grid"}'><i class="si si-load-more"></i> Load More (<span data-load-more-counter="6">6</span>)</a>
+					</section></div>
+			</div>
+		</div>
+	</section><section class="fw-section layout-boxed without-overlay without-parallax vc_custom_1509452429451 padding-top-3x padding-bottom-4x" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2>Our Working Process</h2>
+				</div><div class="row padding-bottom-3x"><div class="col-sm-4"><div class="step step-simple step-dark">
+
+					<h3 class="step-digit">01</h3>
+
+					<div class="step-body">
+						<h3 class="step-title">Discuss</h3>
+						<p class="step-text">Sed sit amet ligula a justo pharetra lobortis. Duis commodo leo ut velit mollis, sit amet dictum enim auctor.</p>
+					</div>
+				</div></div><div class="col-sm-4"><div class="step step-simple step-dark">
+
+					<h3 class="step-digit">02</h3>
+
+					<div class="step-body">
+						<h3 class="step-title">Create</h3>
+						<p class="step-text">Sed sit amet ligula a justo pharetra lobortis. Duis commodo leo ut velit mollis, sit amet dictum enim auctor.</p>
+					</div>
+				</div></div><div class="col-sm-4"><div class="step step-simple step-dark">
+
+					<h3 class="step-digit">03</h3>
+
+					<div class="step-body">
+						<h3 class="step-title">Result</h3>
+						<p class="step-text">Sed sit amet ligula a justo pharetra lobortis. Duis commodo leo ut velit mollis, sit amet dictum enim auctor.</p>
+					</div>
+				</div></div></div><div class="row vc_custom_1502456436908 padding-top-3x padding-bottom-3x custom-bordered-row"><div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2 style="text-align: center;"><span class="text-huge text-primary">Turn your ideas into reality</span></h2>
+				</div><div class="text-block vc_custom_1502451622559 margin-bottom-2x"><p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sem velit, ultrices eu est nec, maximus mattis nulla.</p>
+					<p style="text-align: center;">Sed sed metus accumsan, ultricies odio eu, tempor justo. Nam vestibulum nibh eget magna sodales imperdiet. Cras justo risus, consequat quis lectus ac, luctus posuere urna. Proin tempus est a massa mattis, ut faucibus ante porta. In ullamcorper gravida aliquam.</p>
+				</div><div class="text-center"><a href="#" class="btn btn-ghost btn-pill btn-primary btn-nl">Let&#039;s Discuss Your Project</a></div></div></div></div>
+			</div>
+		</div>
+	</section><section class="fw-section layout-boxed without-overlay without-parallax padding-top-3x padding-bottom-3x" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2>Satisfied Customers</h2>
+				</div><div class="si-justified-grid"><div class="si-justified-row">
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo01.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo01.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo01-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">Capistrano</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div>
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo02.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo02.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo02-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">Docker</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div>
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo03.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo03.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo03-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">FootPrint</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div>
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo04.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo04.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo04-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">D3 Docs</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div></div><div class="si-justified-row">
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo05.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo05.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo05-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">Blender</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div>
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo06.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo06.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo06-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">Git</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div>
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo07.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo07.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo07-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">Atom</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div>
+					<div class="si-justified-item border-default-left border-default-top border-dark">
+						<a class="si-logos-item" href="#">
+							<div class="si-logos-img">
+								<img width="200" height="200" src="../wp-content/uploads/2017/05/logo08.png" class="attachment-medium size-medium" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/logo08.png 200w, http://silicon.8guild.com/wp-content/uploads/2017/05/logo08-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" />
+							</div>
+							<div class="si-logos-info">
+								<h4 class="si-logos-title">Angular</h4>
+								<p class="text-gray">Sed ut perspiciatis unde omnis iste natus error</p>
+							</div>
+						</a>
+					</div></div></div></div>
+			</div>
+		</div>
+	</section><section class="fw-section layout-boxed without-overlay without-parallax padding-bottom-3x" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2>And What They Say&#8230;</h2>
+				</div><div class="testimonials-carousel owl-carousel carousel-with-dots carousel-dark" data-si-carousel='{"nav":false,"dots":true,"loop":true,"autoplay":true,"autoplayTimeout":4000,"margin":30,"autoHeight":false,"responsive":{"0":{"items":1},"768":{"items":2},"991":{"items":3},"1200":{"items":3}}}'><div class="testimonial testimonial-left border-default">
+    <span class="quote-mark background-dark">
+        <i class="si si-quote"></i>
+    </span>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="testimonial-author"><div class="author-avatar"><img width="100" height="100" src="../wp-content/uploads/2017/05/test03.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></div><div class="testimonial-author-info"><h4 class="testimonial-author-name">Tara Johnson</h4><h5 class="testimonial-author-position text-gray">Graphic Designer</h5></div></div>
+				</div><div class="testimonial testimonial-left border-default">
+    <span class="quote-mark background-dark">
+        <i class="si si-quote"></i>
+    </span>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="testimonial-author"><div class="author-avatar"><img width="100" height="100" src="../wp-content/uploads/2017/05/test05.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></div><div class="testimonial-author-info"><h4 class="testimonial-author-name">Sam McDoe</h4><h5 class="testimonial-author-position text-gray">Web Developer</h5></div></div>
+				</div><div class="testimonial testimonial-left border-default">
+    <span class="quote-mark background-dark">
+        <i class="si si-quote"></i>
+    </span>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="testimonial-author"><div class="author-avatar"><img width="100" height="100" src="../wp-content/uploads/2017/05/test04.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></div><div class="testimonial-author-info"><h4 class="testimonial-author-name">Steven Price</h4><h5 class="testimonial-author-position text-gray">Senior Web Designer</h5></div></div>
+				</div><div class="testimonial testimonial-left border-default">
+    <span class="quote-mark background-dark">
+        <i class="si si-quote"></i>
+    </span>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="testimonial-author"><div class="author-avatar"><img width="100" height="100" src="../wp-content/uploads/2017/05/test01.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></div><div class="testimonial-author-info"><h4 class="testimonial-author-name">Clarissa Starling</h4><h5 class="testimonial-author-position text-gray">Illustrator</h5></div></div>
+				</div><div class="testimonial testimonial-left border-default">
+    <span class="quote-mark background-dark">
+        <i class="si si-quote"></i>
+    </span>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="testimonial-author"><div class="author-avatar"><img width="100" height="100" src="../wp-content/uploads/2017/05/test07.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></div><div class="testimonial-author-info"><h4 class="testimonial-author-name">Edward Thompson</h4><h5 class="testimonial-author-position text-gray">UI/UX Designer</h5></div></div>
+				</div><div class="testimonial testimonial-left border-default">
+    <span class="quote-mark background-dark">
+        <i class="si si-quote"></i>
+    </span>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="testimonial-author"><div class="author-avatar"><img width="100" height="100" src="../wp-content/uploads/2017/05/test02.jpg" class="attachment-thumbnail size-thumbnail" alt="" /></div><div class="testimonial-author-info"><h4 class="testimonial-author-name">Bill Portman</h4><h5 class="testimonial-author-position text-gray">Product Designer</h5></div></div>
+				</div></div></div>
+			</div>
+		</div>
+	</section><section class="fw-section layout-boxed without-overlay without-parallax padding-bottom-3x" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12"><div class="text-block margin-bottom-2x"><h2>Insights</h2>
+				</div><div id="blog-1b7ca5e9-grid" class="blog-posts masonry-grid isotope-grid col-3">
+					<div class="gutter-sizer"></div>
+					<div class="grid-sizer"></div>
+					<div class="grid-item">
+						<article class="post-tile border-default post-478 post type-post status-publish format-image has-post-thumbnail hentry category-marketing category-science category-technology tag-business tag-galaxy tag-news tag-space tag-startup tag-tech tag-universe post_format-post-format-image">
+
+							<header class="post-header"><a href="../why-is-everyone-talking-about-space/index.html" class="post-thumb"><img width="900" height="500" src="../wp-content/uploads/2017/05/blog_featured_post_img_01.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_01.jpg 900w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_01-300x167.jpg 300w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_01-768x427.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></a><div class="post-categories font-family-nav"><span class="text-gray">In</span><a href="../category/marketing/index.html" style="background-color: #ff542c; color: #ffffff;">Marketing</a></div><span class="post-format"></span>
+								<div class="svg-bg border-default-right">
+									<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+										<path d="m 0 100 l 100 -100, 0 100, -100 0 z" fill="white"></path>
+									</svg>
+								</div></header>
+							<div class="post-body">
+
+								<h3 class="post-title"><a href="../why-is-everyone-talking-about-space/index.html" class="navi-link-color navi-link-hover-color">Why Is Everyone Talking About Space?</a></h3>Curabitur egestas pharetra augue quis tristique. Proin nec urna ultricies, tristique dolor sed, tempus erat. Cras imperdiet, tellus ac imperdiet dapibus, lectus ante facilisis arcu, a molestie velit tortor et lacus.
+
+							</div>
+
+							<footer class="post-footer font-family-nav"><a href="../author/johndorian/index.html" class="post-author navi-link-hover-color">
+								<span class="post-author-ava"><img width="150" height="150" src="../wp-content/uploads/2017/05/author04-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/author04-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/author04-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/author04.jpg 192w" sizes="(max-width: 150px) 100vw, 150px" /></span>
+								<span class="post-author-name">John Dorian</span>
+							</a><div class="post-meta font-family-nav"><a href="../why-is-everyone-talking-about-space/index.html#respond" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 0</a><a href="../why-is-everyone-talking-about-space/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> May 25, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div></footer>
+						</article>
+					</div>
+					<div class="grid-item">
+						<article class="post-tile border-default post-509 post type-post status-publish format-quote has-post-thumbnail hentry category-crowdfunding category-marketing tag-branding tag-business tag-indiegogo tag-kickstarter tag-platform tag-sales tag-startup post_format-post-format-quote">
+
+							<header class="post-header"><a href="../crowdfunding-in-20-easy-steps/index.html" class="post-thumb"><img width="900" height="500" src="../wp-content/uploads/2017/05/blog_featured_post_img_09.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_09.jpg 900w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_09-300x167.jpg 300w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_09-768x427.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></a><div class="post-categories font-family-nav"><span class="text-gray">In</span><a href="../category/crowdfunding/index.html" style="background-color: #8c53e6; color: #ffffff;">Crowdfunding</a></div><span class="post-format"></span>
+								<div class="svg-bg border-default-right">
+									<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+										<path d="m 0 100 l 100 -100, 0 100, -100 0 z" fill="white"></path>
+									</svg>
+								</div></header>
+							<div class="post-body">
+
+								<h3 class="post-title"><a href="../crowdfunding-in-20-easy-steps/index.html" class="navi-link-color navi-link-hover-color">Crowdfunding in 20 Easy Steps</a></h3>Ut in lectus mauris. Nulla id ex vulputate, rhoncus arcu a, auctor dolor. Pellentesque mollis semper risus, id ornare dolor egestas sit amet. Morbi tempus nec augue in sodales.
+
+							</div>
+
+							<footer class="post-footer font-family-nav"><a href="../author/tamarashtein/index.html" class="post-author navi-link-hover-color">
+								<span class="post-author-ava"><img width="150" height="150" src="../wp-content/uploads/2017/05/author03-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/author03-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/author03-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/author03.jpg 192w" sizes="(max-width: 150px) 100vw, 150px" /></span>
+								<span class="post-author-name">Tamara Shtein</span>
+							</a><div class="post-meta font-family-nav"><a href="../crowdfunding-in-20-easy-steps/index.html#comments" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 3</a><a href="../crowdfunding-in-20-easy-steps/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> May 24, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div></footer>
+						</article>
+					</div>
+					<div class="grid-item">
+						<article class="post-tile border-default post-477 post type-post status-publish format-video hentry category-science category-technology tag-business tag-galaxy tag-space tag-tech tag-universe post_format-post-format-video">
+
+							<header class="post-header"><div class="post-categories font-family-nav"><span class="text-gray">In</span><a href="../category/technology/index.html" style="background-color: #3d59f9; color: #ffffff;">Technology</a></div><span class="post-format"></span>
+								<div class="svg-bg border-default-right">
+									<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+										<path d="m 0 100 l 100 -100, 0 100, -100 0 z" fill="white"></path>
+									</svg>
+								</div></header>
+							<div class="post-body">
+
+								<h3 class="post-title"><a href="../simple-guidance-for-you-in-space/index.html" class="navi-link-color navi-link-hover-color">Simple Guidance For You In Space.</a></h3>Nullam vel semper enim. Aenean id sagittis sem, vitae mattis mi. Donec ut nunc a lectus lacinia cursus eu quis ligula. Proin et sapien semper, consequat nunc vitae, euismod sem.
+
+							</div>
+
+							<footer class="post-footer font-family-nav"><a href="../author/samantasmith/index.html" class="post-author navi-link-hover-color">
+								<span class="post-author-ava"><img width="150" height="150" src="../wp-content/uploads/2017/05/author01-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/author01-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/author01-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/author01.jpg 192w" sizes="(max-width: 150px) 100vw, 150px" /></span>
+								<span class="post-author-name">Samanta Smith</span>
+							</a><div class="post-meta font-family-nav"><a href="../simple-guidance-for-you-in-space/index.html#comments" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 1</a><a href="../simple-guidance-for-you-in-space/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> May 22, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div></footer>
+						</article>
+					</div>
+					<div class="grid-item">
+						<article class="post-tile border-default post-515 post type-post status-publish format-link hentry category-marketing category-software tag-advertising tag-analysis tag-business tag-development tag-operating tag-startup post_format-post-format-link">
+
+							<header class="post-header"><div class="post-categories font-family-nav"><span class="text-gray">In</span><a href="../category/marketing/index.html" style="background-color: #ff542c; color: #ffffff;">Marketing</a></div><span class="post-format"></span>
+								<div class="svg-bg border-default-right">
+									<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+										<path d="m 0 100 l 100 -100, 0 100, -100 0 z" fill="white"></path>
+									</svg>
+								</div></header>
+							<div class="post-body">
+
+								<h3 class="post-title"><a href="../5-unbelievable-facts-about-marketing/index.html" class="navi-link-color navi-link-hover-color">5 Unbelievable Facts About Marketing.</a></h3>Praesent cursus nunc nisi, non hendrerit augue aliquam sit amet. Sed aliquam, orci sed rutrum euismod, turpis sem pulvinar lorem, sed consectetur arcu augue a metus.
+
+							</div>
+
+							<footer class="post-footer font-family-nav"><a href="../author/johndorian/index.html" class="post-author navi-link-hover-color">
+								<span class="post-author-ava"><img width="150" height="150" src="../wp-content/uploads/2017/05/author04-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/author04-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/author04-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/author04.jpg 192w" sizes="(max-width: 150px) 100vw, 150px" /></span>
+								<span class="post-author-name">John Dorian</span>
+							</a><div class="post-meta font-family-nav"><a href="../5-unbelievable-facts-about-marketing/index.html#respond" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 0</a><a href="../5-unbelievable-facts-about-marketing/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> April 25, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div></footer>
+						</article>
+					</div>
+					<div class="grid-item">
+						<article class="post-tile border-default post-511 post type-post status-publish format-standard has-post-thumbnail hentry category-digital category-marketing category-software tag-branding tag-design tag-graphic tag-startup tag-ui">
+
+							<header class="post-header"><a href="../digital-expert-interview/index.html" class="post-thumb"><img width="900" height="500" src="../wp-content/uploads/2017/05/blog_featured_post_img_12.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_12.jpg 900w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_12-300x167.jpg 300w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_12-768x427.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></a><div class="post-categories font-family-nav"><span class="text-gray">In</span><a href="../category/digital/index.html" style="background-color: #0c2eaf; color: #ffffff;">Digital</a></div><span class="post-format"></span>
+								<div class="svg-bg border-default-right">
+									<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+										<path d="m 0 100 l 100 -100, 0 100, -100 0 z" fill="white"></path>
+									</svg>
+								</div></header>
+							<div class="post-body">
+
+								<h3 class="post-title"><a href="../digital-expert-interview/index.html" class="navi-link-color navi-link-hover-color">Digital Expert Interview</a></h3>Aliquam hendrerit ac ligula sed volutpat. Etiam eget velit in nulla hendrerit pellentesque. Sed vel odio velit. Maecenas vulputate suscipit justo id lobortis.
+
+							</div>
+
+							<footer class="post-footer font-family-nav"><a href="../author/samantasmith/index.html" class="post-author navi-link-hover-color">
+								<span class="post-author-ava"><img width="150" height="150" src="../wp-content/uploads/2017/05/author01-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/author01-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/author01-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/author01.jpg 192w" sizes="(max-width: 150px) 100vw, 150px" /></span>
+								<span class="post-author-name">Samanta Smith</span>
+							</a><div class="post-meta font-family-nav"><a href="../digital-expert-interview/index.html#respond" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 0</a><a href="../digital-expert-interview/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> April 15, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div></footer>
+						</article>
+					</div>
+					<div class="grid-item">
+						<article class="post-tile border-default post-497 post type-post status-publish format-chat hentry category-crowdfunding category-software tag-apps tag-development tag-indiegogo tag-kickstarter tag-startup post_format-post-format-chat">
+
+							<header class="post-header"><div class="post-categories font-family-nav"><span class="text-gray">In</span><a href="../category/crowdfunding/index.html" style="background-color: #8c53e6; color: #ffffff;">Crowdfunding</a></div><span class="post-format"></span>
+								<div class="svg-bg border-default-right">
+									<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+										<path d="m 0 100 l 100 -100, 0 100, -100 0 z" fill="white"></path>
+									</svg>
+								</div></header>
+							<div class="post-body">
+
+								<h3 class="post-title"><a href="../fast-track-your-city-planning-app/index.html" class="navi-link-color navi-link-hover-color">Fast-Track Your City Planning App</a></h3>Curabitur sit amet varius turpis, a tristique sem. Nam sodales mollis nunc, eu scelerisque nibh interdum vel. Duis sollicitudin efficitur nisl vel malesuada.
+
+							</div>
+
+							<footer class="post-footer font-family-nav"><a href="../author/tamarashtein/index.html" class="post-author navi-link-hover-color">
+								<span class="post-author-ava"><img width="150" height="150" src="../wp-content/uploads/2017/05/author03-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/author03-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/author03-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/author03.jpg 192w" sizes="(max-width: 150px) 100vw, 150px" /></span>
+								<span class="post-author-name">Tamara Shtein</span>
+							</a><div class="post-meta font-family-nav"><a href="../fast-track-your-city-planning-app/index.html#respond" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 0</a><a href="../fast-track-your-city-planning-app/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> April 14, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div></footer>
+						</article>
+					</div>
+				</div>
+
+					<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+						<div class="wpb_wrapper">
+							<hr class="margin-bottom-none">
+						</div>
+					</div>
+					<div class="text-center"><a href="#" class="btn btn-link btn-pill btn-default btn-nl">All Posts&nbsp;<i class="si si-arrow-right"></i></a></div>
+					<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+						<div class="wpb_wrapper">
+							<hr class="margin-top-none">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><section class="fw-section layout-boxed without-overlay without-parallax vc_custom_1502453349343 padding-top-3x padding-bottom-3x mobile-center custom-btn-position" data-offset-top="180">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-sm-12"><div class="text-block custom-title"><h2><span class="text-light">Starting a Project? Just Contact Us.</span></h2>
+				</div></div><div class="col-lg-3 col-sm-12"><div class="text-right"><a href="#" class="btn btn-solid btn-pill btn-default btn-nl mobile-center">Contact Us</a></div></div>
+			</div>
+		</div>
+	</section>
+	</article>
+		<footer class="site-footer footer-light"
+				style="background-color: #222222;" >
+			<div class="container">
+				<div class="footer-row">
+					<div class="row">
+
+						<div class="col-md-3 col-sm-6">
+							<section id="silicon_contacts-2" class="widget widget_silicon_contacts"><h3 class="widget-title">Contact Us</h3><ul>
+								<li>
+									<i class="si si-location background-white"></i>
+									<span class="contact-label">Find Us</span>
+									<span class="contact-info font-family-body">1260 Broadway, New York,<br />
+NY 10001</span>
+								</li>
+
+								<li>
+									<i class="si si-phone background-white"></i>
+									<span class="contact-label font-family-nav">Call Us</span>
+									<a href="tel:+12002367785" class="contact-info font-family-body">+12 00 236 77 85</a>
+								</li>
+
+								<li>
+									<i class="si si-email-black background-white"></i>
+									<span class="contact-label font-family-nav">Write Us</span>
+									<a href="mailto:support@silicon.com" class="contact-info font-family-body">support@silicon.com</a>
+								</li>
+							</ul></section>				</div>
+
+						<div class="col-md-3 col-sm-6">
+							<section id="categories-3" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+								<li class="cat-item cat-item-39"><a href="../category/crowdfunding/index.html" >Crowdfunding</a> (4)
+								</li>
+								<li class="cat-item cat-item-42"><a href="../category/digital/index.html" >Digital</a> (6)
+								</li>
+								<li class="cat-item cat-item-41"><a href="../category/marketing/index.html" >Marketing</a> (10)
+								</li>
+								<li class="cat-item cat-item-82"><a href="../category/posts/index.html" >Posts</a> (10)
+								</li>
+								<li class="cat-item cat-item-43"><a href="../category/science/index.html" >Science</a> (7)
+								</li>
+								<li class="cat-item cat-item-40"><a href="../category/software/index.html" >Software</a> (10)
+								</li>
+								<li class="cat-item cat-item-38"><a href="../category/technology/index.html" >Technology</a> (8)
+								</li>
+							</ul>
+							</section>				</div>
+
+						<div class="clearfix visible-sm"></div>
+
+						<div class="col-md-3 col-sm-6">
+							<section id="silicon_recent_posts-2" class="widget widget_silicon_recent_posts"><h3 class="widget-title">Recent Posts</h3><article class="post-item"><a href="../why-is-everyone-talking-about-space/index.html" class="post-thumb"><img width="150" height="150" src="../wp-content/uploads/2017/05/blog_featured_post_img_01-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_01-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_01-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_01-300x300.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" /></a><div class="post-info"><div class="post-meta font-family-nav"><a href="../why-is-everyone-talking-about-space/index.html#respond" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 0</a><a href="../why-is-everyone-talking-about-space/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> May 25, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div><h4 class="post-title"><a href="../why-is-everyone-talking-about-space/index.html" class="navi-link-color navi-link-hover-color">Why Is Everyone Talking About Space?</a></h4></div></article><article class="post-item"><a href="../crowdfunding-in-20-easy-steps/index.html" class="post-thumb"><img width="150" height="150" src="../wp-content/uploads/2017/05/blog_featured_post_img_09-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_09-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_09-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_09-300x300.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" /></a><div class="post-info"><div class="post-meta font-family-nav"><a href="../crowdfunding-in-20-easy-steps/index.html#comments" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 3</a><a href="../crowdfunding-in-20-easy-steps/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> May 24, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div><h4 class="post-title"><a href="../crowdfunding-in-20-easy-steps/index.html" class="navi-link-color navi-link-hover-color">Crowdfunding in 20 Easy Steps</a></h4></div></article><article class="post-item"><a href="../top-7-trends-in-virtual-reality-to-watch/index.html" class="post-thumb"><img width="150" height="150" src="../wp-content/uploads/2017/05/blog_featured_post_img_07-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" srcset="http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_07-150x150.jpg 150w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_07-180x180.jpg 180w, http://silicon.8guild.com/wp-content/uploads/2017/05/blog_featured_post_img_07-300x300.jpg 300w" sizes="(max-width: 150px) 100vw, 150px" /></a><div class="post-info"><div class="post-meta font-family-nav"><a href="../top-7-trends-in-virtual-reality-to-watch/index.html#comments" class="post-comments navi-link-hover-color"><i class="si si-comment"></i> 3</a><a href="../top-7-trends-in-virtual-reality-to-watch/index.html" class="post-date navi-link-hover-color"><i class="si si-time"></i> May 23, 2017</a><a href="#" class="edit-link navi-link-hover-color"><i class="si si-edit"></i></a></div><h4 class="post-title"><a href="../top-7-trends-in-virtual-reality-to-watch/index.html" class="navi-link-color navi-link-hover-color">Top 7 Trends In Virtual Reality To Watch.</a></h4></div></article></section>				</div>
+
+						<div class="col-md-3 col-sm-6">
+							<section id="silicon_subscribe-2" class="widget widget_silicon_subscribe"><h3 class="widget-title">Subscribe For News</h3>		<form method="post" action="http://8guild.us3.list-manage.com/subscribe/post?u=168a366a98d3248fbc35c0b67&amp;id=011a3332a0"
+																																									class="subscribe-form" target="_blank" novalidate autocomplete="off">
+
+								<div style="position: absolute; left: -5000px;">
+									<input type="text" name="b_168a366a98d3248fbc35c0b67_011a3332a0" tabindex="-1" value>
+								</div>
+								<div class="input-group">
+									<input type="email" name="EMAIL" class="input-pill"
+										   placeholder="Enter your email">
+									<button type="submit"><i class="si si-send"></i></button>
+								</div>
+								<p class="text-sm text-gray">Subscribe to our newspaper. Be informed about all new themes and updates.</p>		</form>
+							</section>				</div>
+
+					</div>
+				</div>
+				<div class="footer-row border-default-top">
+					<section id="text-2" class="widget widget_text">			<div class="textwidget"><div class="social-bar text-center" style="margin-bottom:5px;"><a href="#" class="social-button sb-facebook sb-shape-no sb-monochrome sb-light"><i class="socicon-facebook unhvrd"></i><i class="socicon-facebook hvrd"></i></a><a href="#" class="social-button sb-linkedin sb-shape-no sb-monochrome sb-light"><i class="socicon-linkedin unhvrd"></i><i class="socicon-linkedin hvrd"></i></a><a href="#" class="social-button sb-twitter sb-shape-no sb-monochrome sb-light"><i class="socicon-twitter unhvrd"></i><i class="socicon-twitter hvrd"></i></a><a href="#" class="social-button sb-pinterest sb-shape-no sb-monochrome sb-light"><i class="socicon-pinterest unhvrd"></i><i class="socicon-pinterest hvrd"></i></a></div>
+						<p class="text-center"><span class="text-white opacity-50">Silicon. Made with </span><i class="text-danger si si-favorite-border"></i><span class="text-white opacity-50"> by 8Guild</span></p>
+						<p><a href="../index.html" class="block-center" style="width:120px;"><img src="../wp-content/uploads/2017/05/logo_footer.png" alt="Silicon"></a></p>
+					</div>
+					</section>	</div>
+			</div>
+		</footer>
+	</div>        <a href="#" class="scroll-to-top-btn">
+		<i class="si si-angle-up"></i>
+	</a>
+</main><template id="si-gallery-template">
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+				<div class="pswp__caption">
+					<div class="pswp__caption__center font-family-nav"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template><div class="site-backdrop" style="background-color: #000000; opacity: 0.7;"></div><link rel='stylesheet' id='photoswipe-css'  href='../wp-content/plugins/silicon-core/assets/photoswipe/photoswipe.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-content/plugins/bbpress/templates/default/js/editor.js'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript'>
+	/* <![CDATA[ */
+	var wpcf7 = {"apiSettings":{"root":"http:\/\/silicon.8guild.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+	/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/silicon-core/assets/js/vendor/aos.min.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/silicon-core/assets/js/theme-core.min.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js'></script>
+<script type='text/javascript'>
+	/* <![CDATA[ */
+	var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/silicon.8guild.com\/?wc-ajax=%%endpoint%%"};
+	/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js'></script>
+<script type='text/javascript'>
+	/* <![CDATA[ */
+	var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"http:\/\/silicon.8guild.com\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments_dc06c63a5c1f6ec630761b73cf4aa8b5"};
+	/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/silicon/assets/js/vendor/plugins.min.js'></script>
+<script type='text/javascript'>
+	/* <![CDATA[ */
+	var silicon = {"ajaxurl":"http:\/\/silicon.8guild.com\/wp-admin\/admin-ajax.php"};
+	/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/silicon/assets/js/theme.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/silicon/assets/js/wc.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='../wp-content/plugins/silicon-core/assets/photoswipe/photoswipe.min.js'></script>
+
+</body>
+
+<!-- Mirrored from silicon.8guild.com/enterprise-software-development/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Apr 2018 00:25:20 GMT -->
+</html>
